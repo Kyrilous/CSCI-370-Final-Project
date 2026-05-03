@@ -14,12 +14,8 @@ function Navbar() {
                     Find Rooms
                 </Link>
 
-                <Link style={styles.links} to={"/login"}>
-                    Login
-                </Link>
-
-                <Link style={styles.links} to={"/admin-upload"}>
-                    Admin Upload
+                <Link style={styles.links} to={"/admin-login"}>
+                    Admin Login
                 </Link>
             </div>
         </nav>
