@@ -14,16 +14,13 @@ import { auth } from "../firebase";
 
 function AdminLogin() {
   const navigate = useNavigate();
-
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
   async function handleLogin(event) {
     event.preventDefault();
-
     setError("");
     setLoading(true);
 
@@ -35,11 +32,9 @@ function AdminLogin() {
       );
 
       const token = await userCredential.user.getIdToken();
-
       localStorage.setItem("adminToken", token);
       localStorage.setItem("adminEmail", userCredential.user.email);
       window.dispatchEvent(new Event("adminAuthChange"));
-
       navigate("/admin-dashboard");
     } catch (err) {
       setError("Invalid email or password.");
@@ -73,7 +68,7 @@ function AdminLogin() {
             </Typography>
 
             <Typography variant="body1" color="text.secondary" sx={{ mb: 3 }}>
-              Sign in to access CSV upload form.
+              Sign in to access the admin dashboard.
             </Typography>
 
             {error && (
