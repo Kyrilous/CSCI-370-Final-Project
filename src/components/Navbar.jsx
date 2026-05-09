@@ -1,19 +1,47 @@
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 function Navbar() {
+    const navigate = useNavigate();
+    const [isAdminLoggedIn, setIsAdminLoggedIn] = useState(
+        Boolean(localStorage.getItem("adminToken"))
+    );
+
+    useEffect(() => {
+        const updateAuth = () => {
+            setIsAdminLoggedIn(Boolean(localStorage.getItem("adminToken")));
+        };
+
+        window.addEventListener("storage", updateAuth);
+        window.addEventListener("adminAuthChange", updateAuth);
+
+        return () => {
+            window.removeEventListener("storage", updateAuth);
+            window.removeEventListener("adminAuthChange", updateAuth);
+        };
+    }, []);
+
+    const handleLogout = () => {
+        localStorage.removeItem("adminToken");
+        localStorage.removeItem("adminEmail");
+        window.dispatchEvent(new Event("adminAuthChange"));
+        navigate("/");
+    };
+
     return (
         <nav style={styles.navbar}>
             <h2 style={styles.logo}>RoomRadar QC</h2>
 
             <div style={styles.links}>
-                <Link style={styles.links} to={"/"}>
+                <Link style={styles.link} to={"/"}>
                     Home
                 </Link>
 
-                <Link style={styles.links} to={"/find-rooms"}>
+                <Link style={styles.link} to={"/find-rooms"}>
                     Find Rooms
                 </Link>
 
+<<<<<<< Updated upstream
                 <Link style={styles.links} to={"/login"}>
                     Login
                 </Link>
@@ -21,6 +49,17 @@ function Navbar() {
                 <Link style={styles.links} to={"/admin-upload"}>
                     Admin Upload
                 </Link>
+=======
+                {!isAdminLoggedIn ? (
+                    <Link style={styles.link} to={"/admin-login"}>
+                        Admin Login
+                    </Link>
+                ) : (
+                    <button style={styles.logoutButton} onClick={handleLogout}>
+                        Logout
+                    </button>
+                )}
+>>>>>>> Stashed changes
             </div>
         </nav>
     );
@@ -47,11 +86,23 @@ const styles = {
             "linear-gradient(to right, #1f1f1f, #8f2a3b96, #bdbcbc) padding-box, linear-gradient(to right, #000000, #E71939, #ffffff) border-box",
         border: "2px solid transparent",
     },
-    links: {   
+    links: {
         display: "flex",
         gap: "1rem",
+        alignItems: "center",
+    },
+    link: {
         textDecoration: "none",
         color: "#fff",
+    },
+    logoutButton: {
+        background: "transparent",
+        border: "1px solid rgba(255,255,255,0.8)",
+        color: "#fff",
+        padding: "0.5rem 1rem",
+        borderRadius: "999px",
+        cursor: "pointer",
+        font: "inherit",
     },
 };
 
