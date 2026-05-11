@@ -1,0 +1,7 @@
+room_code,building,capacity,course_name,instructor,day,start_time,end_time
+PH 116,Powdermaker Hall,30,Intro to Programming,Dr. Smith,Monday,08:00,09:15
+PH 116,Powdermaker Hall,30,Data Structures,Dr. Smith,Monday,10:00,11:15
+KY 243,Kiely Hall,25,Calculus I,Prof. Jones,Monday,09:30,10:45
+KY 243,Kiely Hall,25,Linear Algebra,Prof. Jones,Wednesday,11:00,12:15
+SB B145,Science Building,40,Physics I,Dr. Lee,Tuesday,08:00,09:15
+SB B145,Science Building,40,Chemistry Lab,Dr. Lee,Thursday,13:00,14:15
