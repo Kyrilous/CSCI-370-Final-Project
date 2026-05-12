@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Firebase service account key - never commit this
+backend/serviceAccountKey.json
+backend/roomradar-qc-firebase-adminsdk-fbsvc-2ae032eef0.json
+backend/__pycache__/

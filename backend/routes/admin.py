@@ -1,5 +1,6 @@
 from flask import Blueprint, request, jsonify
 from models import get_db
+from firebase_admin import auth
 import csv
 import io
 from datetime import datetime
@@ -10,6 +11,14 @@ admin_bp = Blueprint("admin", __name__)
 
 @admin_bp.route("/api/admin/semester", methods=["POST"])
 def upload_semester():
+    token = request.headers.get("Authorization")
+    if not token:
+        return jsonify({"message": "Unauthorized"}), 401
+    try:
+        auth.verify_id_token(token)
+    except:
+        return jsonify({"message": "Invalid token"}), 401
+
     name = request.form.get("semesterName")
     file=request.files.get("csvFile")
 
