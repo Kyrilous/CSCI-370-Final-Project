@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useMemo, useEffect, useState } from "react";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 import {
   Box,
@@ -13,43 +13,41 @@ import {
 } from "@mui/material";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 
-const rooms = [
-  { id: "1", room: "PH 116", building: "Powdermaker Hall" },
-  { id: "2", room: "KY 243", building: "Kiely Hall" },
-  { id: "3", room: "SB B145", building: "Science Building" },
-];
-
-const schedules = {
-  "1": [
-    { time: "8:00 AM - 9:15 AM", course: "Intro to Programming", instructor: "Prof. Lee" },
-    { time: "10:00 AM - 11:15 AM", course: "Algorithms", instructor: "Dr. Patel" },
-    { time: "1:30 PM - 2:45 PM", course: "Web Design", instructor: "Dr. Simmons" },
-    { time: "3:00 PM - 4:15 PM", course: "Database Systems", instructor: "Dr. Chen" },
-  ],
-  "2": [
-    { time: "9:00 AM - 10:15 AM", course: "Operating Systems", instructor: "Dr. Cooper" },
-    { time: "11:00 AM - 12:15 PM", course: "Cybersecurity", instructor: "Prof. Perez" },
-    { time: "2:00 PM - 3:15 PM", course: "Networking", instructor: "Dr. Murphy" },
-  ],
-  "3": [
-    { time: "8:30 AM - 9:45 AM", course: "Chemistry Lab", instructor: "Dr. Fields" },
-    { time: "10:30 AM - 11:45 AM", course: "Physics Lab", instructor: "Dr. Simone" },
-    { time: "1:00 PM - 2:15 PM", course: "Biology Seminar", instructor: "Prof. Nguyen" },
-  ],
-};
-
 function RoomDetails() {
   const navigate = useNavigate();
   const location = useLocation();
   const { id } = useParams();
 
+  const [schedule, setSchedule] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
+
+  const dayLabel = location.state?.day || "Today";
+
+  useEffect(() => {
+    if (id && location.state?.day) {
+      fetch(`/api/rooms/${id}/schedule?day=${location.state.day}`)
+        .then((response) => response.json())
+        .then((data) => {
+          setSchedule(data);
+        })
+        .catch((err) => {
+          setError("Failed to load schedule.");
+          console.error(err);
+        })
+        .finally(() => {
+          setLoading(false);
+        });
+    } else {
+      setLoading(false);
+    }
+  }, [id, location.state?.day]);
+
+  // Mock room data, replace with API if needed
   const room = useMemo(
-    () => rooms.find((item) => item.id === id) || rooms[0],
+    () => ({ id, room: `Room ${id}`, building: "Building" }),
     [id]
   );
-
-  const schedule = useMemo(() => schedules[id] || [], [id]);
-  const dayLabel = location.state?.day || "Today";
 
   return (
     <Box sx={styles.page}>
@@ -76,18 +74,22 @@ function RoomDetails() {
               Today’s Schedule
             </Typography>
 
-            {schedule.length === 0 ? (
+            {loading ? (
+              <Typography>Loading schedule...</Typography>
+            ) : error ? (
+              <Typography color="error">{error}</Typography>
+            ) : schedule.length === 0 ? (
               <Typography color="text.secondary">
                 No schedule data available for this room today.
               </Typography>
             ) : (
               <List>
                 {schedule.map((entry, index) => (
-                  <Box key={entry.time}>
+                  <Box key={index}>
                     <ListItem disableGutters>
                       <ListItemText
-                        primary={entry.time}
-                        secondary={`${entry.course} • ${entry.instructor}`}
+                        primary={`${entry.start_time} - ${entry.end_time}`}
+                        secondary={`${entry.course_name} • ${entry.instructor}`}
                       />
                     </ListItem>
                     {index < schedule.length - 1 && <Divider />}

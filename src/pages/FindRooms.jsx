@@ -22,26 +22,12 @@ const loadFindRoomsState = () => {
   }
 };
 
-const mockRooms = [
-  {
-    id: "1",
-    room: "PH 116",
-    building: "Powdermaker Hall",
-    availableUntil: "5:00 PM",
-  },
-  {
-    id: "2",
-    room: "KY 243",
-    building: "Kiely Hall",
-    availableUntil: "6:15 PM",
-  },
-  {
-    id: "3",
-    room: "SB B145",
-    building: "Science Building",
-    availableUntil: "4:30 PM",
-  },
-];
+const buildingMap = {
+  "Powdermaker Hall": "PH",
+  "Kiely Hall": "KY",
+  "Science Building": "SB",
+  "Remsen Hall": "RH",
+};
 
 function FindRooms() {
   const navigate = useNavigate();
@@ -54,6 +40,8 @@ function FindRooms() {
   const [building, setBuilding] = useState(savedState?.building || "All Buildings");
   const [rooms, setRooms] = useState(savedState?.rooms || []);
   const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [searched, setSearched] = useState(false);
 
   useEffect(() => {
     sessionStorage.setItem(
@@ -69,6 +57,7 @@ function FindRooms() {
     );
   }, [day, startTime, endTime, duration, building, rooms]);
 
+
   function handleSearch(event) {
     event.preventDefault();
 
@@ -83,7 +72,34 @@ function FindRooms() {
     }
 
     setError("");
-    setRooms(mockRooms);
+    setLoading(true);
+    setSearched(true);
+
+    const params = new URLSearchParams({
+      day,
+      starttime: startTime,
+      endtime: endTime,
+    });
+
+    if (building !== "All Buildings") {
+      const buildingCode = buildingMap[building];
+      if (buildingCode) {
+        params.append("building", buildingCode);
+      }
+    }
+
+    fetch(`/api/rooms/search?${params}`)
+      .then((response) => response.json())
+      .then((data) => {
+        setRooms(data);
+      })
+      .catch((error) => {
+        setError("Failed to fetch rooms. Please try again.");
+        console.error(error);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
   }
 
   return (
@@ -174,8 +190,8 @@ function FindRooms() {
               </Typography>
             )}
 
-            <Button type="submit" variant="contained" size="large" sx={styles.searchButton}>
-              Search Rooms
+            <Button type="submit" variant="contained" size="large" sx={styles.searchButton} disabled={loading}>
+              {loading ? "Searching..." : "Search Rooms"}
             </Button>
           </Box>
         </CardContent>
@@ -186,9 +202,11 @@ function FindRooms() {
           Available Rooms
         </Typography>
 
-        {rooms.length === 0 ? (
+        {loading ? (
+          <Typography>Loading...</Typography>
+        ) : rooms.length === 0 ? (
           <Typography color="text.secondary">
-            Enter a day and time range to find available rooms.
+            {searched ? "No rooms available for the selected criteria." : "Enter a day and time range to find available rooms."}
           </Typography>
         ) : (
           <Box sx={styles.roomsGrid}>
@@ -196,15 +214,11 @@ function FindRooms() {
               <Card sx={styles.roomCard} key={room.id}>
                 <CardContent>
                   <Typography variant="h5" fontWeight="bold">
-                    {room.room}
+                    {room.room_code}
                   </Typography>
 
                   <Typography color="text.secondary" sx={{ mt: 1 }}>
                     Building: {room.building}
-                  </Typography>
-
-                  <Typography sx={styles.availableText}>
-                    Available until: {room.availableUntil}
                   </Typography>
 
                   <Button

@@ -72,7 +72,7 @@ function AdminDashboard() {
       formData.append("csvFile", csvFile);
 
       // TODO: Replace with actual backend endpoint once the backend is ready
-      const response = await fetch("http://localhost:5000/api/admin/semester", {
+      const response = await fetch("/api/admin/semester", {
         method: "POST",
         body: formData,
       });
