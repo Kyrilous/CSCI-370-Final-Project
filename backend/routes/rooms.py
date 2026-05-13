@@ -2,27 +2,46 @@ from flask import Blueprint, request, jsonify
 from models import get_db
 rooms_bp = Blueprint("rooms", __name__)
 
+DAY_MAP = {
+    "Monday": "M",
+    "Tuesday": "T",
+    "Wednesday": "W",
+    "Thursday": "TH",
+    "Friday": "F",
+}
+
+
+def normalize_day(day):
+    return DAY_MAP.get(day, day)
+
+
+def day_match_clause():
+    return "(day = %s OR FIND_IN_SET(%s, REPLACE(day, ' ', '')) > 0)"
+
+
 @rooms_bp.route("/api/rooms/search", methods=["GET"])
 def search_rooms():
-    day=request.args.get("day")
-    start_time=request.args.get("starttime")
-    end_time=request.args.get("endtime")
-    building=request.args.get("building")
+    day = request.args.get("day")
+    start_time = request.args.get("starttime")
+    end_time = request.args.get("endtime")
+    building = request.args.get("building")
 
-    db=get_db()
-    cursor=db.cursor(dictionary=True)
+    db = get_db()
+    cursor = db.cursor(dictionary=True)
 
-    query="""
-        SELECT DISTINCT rooms.id,rooms.room_code,rooms.building
+    normalized_day = normalize_day(day)
+
+    query = f"""
+        SELECT DISTINCT rooms.id, rooms.room_code, rooms.building
         FROM rooms
         WHERE rooms.id NOT IN(
             SELECT room_id FROM schedules
-            WHERE day=%s
-            AND start_time<%s
-            AND end_time>%s
+            WHERE {day_match_clause()}
+            AND start_time < %s
+            AND end_time > %s
         )
     """
-    params=[day,end_time,start_time]
+    params = [day, normalized_day, end_time, start_time]
 
     if building and building != "All":
         query += " AND rooms.building = %s"
@@ -34,20 +53,20 @@ def search_rooms():
     return jsonify(rooms)
 
 
-
-
 @rooms_bp.route("/api/rooms/<int:room_id>/schedule", methods=["GET"])
 def room_schedule(room_id):
     day = request.args.get("day")
     db = get_db()
     cursor = db.cursor(dictionary=True)
 
-    cursor.execute("""
+    normalized_day = normalize_day(day)
+    query = f"""
         SELECT course_name, instructor, day, start_time, end_time
         FROM schedules
-        WHERE room_id = %s AND day = %s
+        WHERE room_id = %s AND {day_match_clause()}
         ORDER BY start_time
-    """, (room_id, day))
+    """
+    cursor.execute(query, (room_id, day, normalized_day))
 
     schedule = cursor.fetchall()
 

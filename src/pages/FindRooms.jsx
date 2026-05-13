@@ -224,7 +224,15 @@ function FindRooms() {
                   <Button
                     variant="outlined"
                     sx={{ mt: 2 }}
-                    onClick={() => navigate(`/rooms/${room.id}`, { state: { day } })}
+                    onClick={() =>
+                      navigate(`/rooms/${room.id}`, {
+                        state: {
+                          day,
+                          room_code: room.room_code,
+                          building: room.building,
+                        },
+                      })
+                    }
                   >
                     View Schedule
                   </Button>

@@ -22,11 +22,14 @@ function RoomDetails() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
-  const dayLabel = location.state?.day || "Today";
+  const state = location.state || {};
+  const dayLabel = state.day || "Today";
+  const roomLabel = state.room_code || `Room ${id}`;
+  const buildingLabel = state.building || "Building";
 
   useEffect(() => {
-    if (id && location.state?.day) {
-      fetch(`/api/rooms/${id}/schedule?day=${location.state.day}`)
+    if (id && state.day) {
+      fetch(`/api/rooms/${id}/schedule?day=${state.day}`)
         .then((response) => response.json())
         .then((data) => {
           setSchedule(data);
@@ -41,12 +44,11 @@ function RoomDetails() {
     } else {
       setLoading(false);
     }
-  }, [id, location.state?.day]);
+  }, [id, state.day]);
 
-  // Mock room data, replace with API if needed
   const room = useMemo(
-    () => ({ id, room: `Room ${id}`, building: "Building" }),
-    [id]
+    () => ({ id, room: roomLabel, building: buildingLabel }),
+    [id, roomLabel, buildingLabel]
   );
 
   return (
