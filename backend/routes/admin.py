@@ -11,9 +11,10 @@ admin_bp = Blueprint("admin", __name__)
 
 @admin_bp.route("/api/admin/semester", methods=["POST"])
 def upload_semester():
-    token = request.headers.get("Authorization")
-    if not token:
+    auth_header = request.headers.get("Authorization")
+    if not auth_header:
         return jsonify({"message": "Unauthorized"}), 401
+    token = auth_header.replace("Bearer ", "")
     try:
         auth.verify_id_token(token)
     except:

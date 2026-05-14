@@ -4,7 +4,6 @@ import {
   Button,
   Card,
   CardContent,
-  TextField,
   Typography,
   Alert,
   CircularProgress,
@@ -75,7 +74,7 @@ function AdminDashboard() {
       const token = localStorage.getItem("adminToken");
       const response = await fetch("http://localhost:5000/api/admin/semester", {
         method: "POST",
-        headers: { "Authorization": token },
+        headers: { "Authorization": `Bearer ${token}` },
         body: formData,
       });
 

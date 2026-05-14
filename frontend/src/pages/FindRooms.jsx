@@ -86,7 +86,7 @@ function FindRooms() {
       }
     }
 
-    fetch(`/api/rooms/search?${params}`)
+    fetch(`http://localhost:5000/api/rooms/search?${params}`)
       .then((response) => {
         if (!response.ok) {
           throw new Error(`Server responded with ${response.status}`);

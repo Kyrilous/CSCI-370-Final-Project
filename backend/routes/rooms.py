@@ -70,6 +70,10 @@ def room_schedule(room_id):
 
     schedule = cursor.fetchall()
 
+    for row in schedule:
+        row["start_time"] = str(row["start_time"])
+        row["end_time"] = str(row["end_time"])
+
     return jsonify(schedule)
 
 

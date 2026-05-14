@@ -6,7 +6,7 @@ from models import create_tables
 import firebase_admin
 from firebase_admin import credentials
 
-cred = credentials.Certificate("roomradar-qc-firebase-adminsdk-fbsvc-572acc1e13.json")
+cred = credentials.Certificate("roomradar-qc-firebase-adminsdk-fbsvc-2ae032eef0.json")
 firebase_admin.initialize_app(cred)
 
 app = Flask(__name__)

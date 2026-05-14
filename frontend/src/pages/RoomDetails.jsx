@@ -29,7 +29,7 @@ function RoomDetails() {
 
   useEffect(() => {
     if (id && state.day) {
-      fetch(`/api/rooms/${id}/schedule?day=${state.day}`)
+      fetch(`http://localhost:5000/api/rooms/${id}/schedule?day=${state.day}`)
         .then((response) => response.json())
         .then((data) => {
           setSchedule(data);
