@@ -44,10 +44,19 @@ def upload_semester():
         room_code = location
 
         cursor.execute(
-            "INSERT INTO rooms (room_code, building, capacity) VALUES (%s, %s, %s)",
-            (room_code, building_code, row["Limit"])
+            "SELECT id FROM rooms WHERE room_code = %s AND building = %s",
+            (room_code, building_code)
         )
-        room_id = cursor.lastrowid
+        existing_room = cursor.fetchone()
+
+        if existing_room:
+            room_id = existing_room[0]
+        else:
+            cursor.execute(
+                "INSERT INTO rooms (room_code, building, capacity) VALUES (%s, %s, %s)",
+                (room_code, building_code, row["Limit"])
+            )
+            room_id = cursor.lastrowid
 
         raw_time = row["Time"].strip()
         if not raw_time or " - " not in raw_time:
