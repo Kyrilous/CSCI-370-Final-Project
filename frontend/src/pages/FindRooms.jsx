@@ -36,7 +36,6 @@ function FindRooms() {
   const [day, setDay] = useState(savedState?.day || "");
   const [startTime, setStartTime] = useState(savedState?.startTime || "");
   const [endTime, setEndTime] = useState(savedState?.endTime || "");
-  const [duration, setDuration] = useState(savedState?.duration || "1 hour");
   const [building, setBuilding] = useState(savedState?.building || "All Buildings");
   const [rooms, setRooms] = useState(savedState?.rooms || []);
   const [error, setError] = useState("");
@@ -50,12 +49,11 @@ function FindRooms() {
         day,
         startTime,
         endTime,
-        duration,
         building,
         rooms,
       })
     );
-  }, [day, startTime, endTime, duration, building, rooms]);
+  }, [day, startTime, endTime, building, rooms]);
 
 
   function handleSearch(event) {
@@ -89,7 +87,12 @@ function FindRooms() {
     }
 
     fetch(`/api/rooms/search?${params}`)
-      .then((response) => response.json())
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`Server responded with ${response.status}`);
+        }
+        return response.json();
+      })
       .then((data) => {
         setRooms(data);
       })
@@ -110,7 +113,7 @@ function FindRooms() {
         </Typography>
 
         <Typography variant="body1" color="text.secondary">
-          Select a day, time range, building, and duration to discover available rooms.
+          Select a day, time range, and building to discover available rooms.
         </Typography>
       </Box>
 
@@ -130,21 +133,6 @@ function FindRooms() {
                   <MenuItem value="Wednesday">Wednesday</MenuItem>
                   <MenuItem value="Thursday">Thursday</MenuItem>
                   <MenuItem value="Friday">Friday</MenuItem>
-                </Select>
-              </FormControl>
-
-              <FormControl fullWidth>
-                <InputLabel>Duration</InputLabel>
-                <Select
-                  value={duration}
-                  label="Duration"
-                  onChange={(event) => setDuration(event.target.value)}
-                >
-                  <MenuItem value="1 hour">1 hour</MenuItem>
-                  <MenuItem value="2 hours">2 hours</MenuItem>
-                  <MenuItem value="3 hours">3 hours</MenuItem>
-                  <MenuItem value="4 hours">4 hours</MenuItem>
-                  <MenuItem value="5 hours">5 hours</MenuItem>
                 </Select>
               </FormControl>
 
