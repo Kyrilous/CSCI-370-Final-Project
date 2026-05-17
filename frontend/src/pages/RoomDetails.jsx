@@ -29,7 +29,7 @@ function RoomDetails() {
 
   useEffect(() => {
     if (id && state.day) {
-      fetch(`http://localhost:5000/api/rooms/${id}/schedule?day=${state.day}`)
+      fetch(`http://127.0.0.1:5000/api/rooms/${id}/schedule?day=${state.day}`)
         .then((response) => response.json())
         .then((data) => {
           setSchedule(data);
@@ -50,6 +50,20 @@ function RoomDetails() {
     () => ({ id, room: roomLabel, building: buildingLabel }),
     [id, roomLabel, buildingLabel]
   );
+
+  const formatScheduleTime = (timeString) => {
+  if (!timeString) return "";
+
+  const [hour, minute] = timeString.split(":");
+
+  let hourNum = parseInt(hour, 10);
+  const suffix = hourNum >= 12 ? "PM" : "AM";
+
+  if (hourNum === 0) hourNum = 12;
+  if (hourNum > 12) hourNum -= 12;
+
+  return `${hourNum}:${minute} ${suffix}`;
+};
 
   return (
     <Box sx={styles.page}>
@@ -90,7 +104,7 @@ function RoomDetails() {
                   <Box key={index}>
                     <ListItem disableGutters>
                       <ListItemText
-                        primary={`${entry.start_time} - ${entry.end_time}`}
+                        primary={`${formatScheduleTime(entry.start_time)} - ${formatScheduleTime(entry.end_time)}`}
                         secondary={`${entry.course_name} • ${entry.instructor}`}
                       />
                     </ListItem>

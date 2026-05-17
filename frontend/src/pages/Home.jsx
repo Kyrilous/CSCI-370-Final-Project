@@ -75,8 +75,7 @@ function Home() {
       </section>
 
       <section style={styles.noteBox}>
-        <strong>Note:</strong> Room availability is estimated using semester
-        schedule data, not live occupancy.
+        <strong>Note:</strong> Room availability is based on course schedule data, not real-time occupancy. We cannot guarantee that a room will be unlocked or unoccupied. Results should be treated as suggestions, and students should always check the room in person before using it as a study space.
       </section>
     </div>
   );

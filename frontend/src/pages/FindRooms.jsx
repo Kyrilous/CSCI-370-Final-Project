@@ -26,7 +26,55 @@ const buildingMap = {
   "Powdermaker Hall": "PH",
   "Kiely Hall": "KY",
   "Science Building": "SB",
-  "Remsen Hall": "RH",
+  "Remsen Hall": "RE",
+
+  "Art Building": "AR",
+  "CD Building": "CD",
+  "Colwin Hall": "CH",
+  "Delany Hall": "DY",
+  "FitzGerald Gym": "FG",
+  "Gertz Center": "GC",
+  "Goldstein Theatre": "GT",
+  "Honors Hall": "HH",
+  "I Building": "IB",
+  "King Hall": "KG",
+  "Klapper Hall": "KP",
+  "Music Building": "MU",
+  "Queens Hall": "QH",
+  "Rathaus Hall": "RA",
+  "Rosenthal Library": "RO",
+};
+
+const buildingNameMap = {
+  PH: "Powdermaker Hall",
+  KY: "Kiely Hall",
+  SB: "Science Building",
+  RE: "Remsen Hall",
+  AR: "Art Building",
+  CD: "CD Building",
+  CH: "Colwin Hall",
+  DY: "Delany Hall",
+  FG: "FitzGerald Gym",
+  GC: "Gertz Center",
+  GT: "Goldstein Theatre",
+  HH: "Honors Hall",
+  IB: "I Building",
+  KG: "King Hall",
+  KP: "Klapper Hall",
+  MU: "Music Building",
+  QH: "Queens Hall",
+  RA: "Rathaus Hall",
+  RO: "Rosenthal Library",
+};
+
+const formatTime = (timeString) => {
+  if (!timeString) return "";
+  const [hour, minute] = timeString.split(":");
+  let hourNum = parseInt(hour, 10);
+  const suffix = hourNum >= 12 ? "PM" : "AM";
+  if (hourNum === 0) hourNum = 12;
+  if (hourNum > 12) hourNum -= 12;
+  return `${hourNum}:${minute} ${suffix}`;
 };
 
 function FindRooms() {
@@ -86,7 +134,7 @@ function FindRooms() {
       }
     }
 
-    fetch(`http://localhost:5000/api/rooms/search?${params}`)
+    fetch(`http://127.0.0.1:5000/api/rooms/search?${params}`)
       .then((response) => {
         if (!response.ok) {
           throw new Error(`Server responded with ${response.status}`);
@@ -133,6 +181,9 @@ function FindRooms() {
                   <MenuItem value="Wednesday">Wednesday</MenuItem>
                   <MenuItem value="Thursday">Thursday</MenuItem>
                   <MenuItem value="Friday">Friday</MenuItem>
+                  <MenuItem value="Saturday">Saturday</MenuItem>
+                  <MenuItem value="Sunday">Sunday</MenuItem>
+
                 </Select>
               </FormControl>
 
@@ -163,11 +214,26 @@ function FindRooms() {
                   label="Building"
                   onChange={(event) => setBuilding(event.target.value)}
                 >
-                  <MenuItem value="All Buildings">All Buildings</MenuItem>
-                  <MenuItem value="Powdermaker Hall">Powdermaker Hall</MenuItem>
-                  <MenuItem value="Kiely Hall">Kiely Hall</MenuItem>
-                  <MenuItem value="Science Building">Science Building</MenuItem>
-                  <MenuItem value="Remsen Hall">Remsen Hall</MenuItem>
+                <MenuItem value="All Buildings">All Buildings</MenuItem>
+                <MenuItem value="Art Building">Art Building</MenuItem>
+                <MenuItem value="CD Building">CD Building</MenuItem>
+                <MenuItem value="Colwin Hall">Colwin Hall</MenuItem>
+                <MenuItem value="Delany Hall">Delany Hall</MenuItem>
+                <MenuItem value="FitzGerald Gym">FitzGerald Gym</MenuItem>
+                <MenuItem value="Gertz Center">Gertz Center</MenuItem>
+                <MenuItem value="Goldstein Theatre">Goldstein Theatre</MenuItem>
+                <MenuItem value="Honors Hall">Honors Hall</MenuItem>
+                <MenuItem value="I Building">I Building</MenuItem>
+                <MenuItem value="King Hall">King Hall</MenuItem>
+                <MenuItem value="Klapper Hall">Klapper Hall</MenuItem>
+                <MenuItem value="Kiely Hall">Kiely Hall</MenuItem>
+                <MenuItem value="Music Building">Music Building</MenuItem>
+                <MenuItem value="Powdermaker Hall">Powdermaker Hall</MenuItem>
+                <MenuItem value="Queens Hall">Queens Hall</MenuItem>
+                <MenuItem value="Rathaus Hall">Rathaus Hall</MenuItem>
+                <MenuItem value="Remsen Hall">Remsen Hall</MenuItem>
+                <MenuItem value="Rosenthal Library">Rosenthal Library</MenuItem>
+                <MenuItem value="Science Building">Science Building</MenuItem>
                 </Select>
               </FormControl>
             </Box>
@@ -200,18 +266,21 @@ function FindRooms() {
           <Box sx={styles.roomsGrid}>
             {rooms.map((room) => (
               <Card sx={styles.roomCard} key={room.id}>
-                <CardContent>
-                  <Typography variant="h5" fontWeight="bold">
+                <CardContent sx={styles.roomCardContent}>
+                  <Typography variant="h5" color="text.secondary">
+                    {buildingNameMap[room.building] || room.building}
+                  </Typography>
+                  <Typography variant="h6" fontWeight="bold" sx={styles.roomCode}>
                     {room.room_code}
                   </Typography>
-
-                  <Typography color="text.secondary" sx={{ mt: 1 }}>
-                    Building: {room.building}
+                  <Typography variant="body1" sx={styles.availableText}>
+                    Available from {formatTime(startTime)} to {formatTime(endTime)}
                   </Typography>
-
                   <Button
-                    variant="outlined"
-                    sx={{ mt: 2 }}
+                    variant="contained"
+                    sx={{...styles.roomButton,
+                      mt: "auto",
+                    }}
                     onClick={() =>
                       navigate(`/rooms/${room.id}`, {
                         state: {
@@ -222,7 +291,7 @@ function FindRooms() {
                       })
                     }
                   >
-                    View Schedule
+                    View Room Schedule
                   </Button>
                 </CardContent>
               </Card>
@@ -291,23 +360,51 @@ const styles = {
   },
   roomsGrid: {
     display: "grid",
-    gridTemplateColumns: "repeat(3, 1fr)",
-    gap: "20px",
+    gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
+    gap: "15px",
     marginTop: "24px",
-    "@media (max-width: 900px)": {
-      gridTemplateColumns: "1fr",
-    },
   },
   roomCard: {
-    borderRadius: 4,
-    boxShadow: 3,
+    borderRadius: "30px",
+    backgroundColor: "#e8f8ea",
+    border: "1px solid #c7edd0",
+    minHeight: "180px",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    textAlign: "center",
+    padding: "28px",
+    boxShadow: "0 10px 24px rgba(15, 23, 42, 0.08)",
+  },
+  roomCardContent: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "space-between",
+    gap: "12px",
+    width: "100%",
     height: "100%",
-    textAlign: "left",
+    textAlign: "center",
+  },
+  roomCode: {
+    color: "#0f5132",
   },
   availableText: {
-    marginTop: "12px",
     color: "#166534",
-    fontWeight: "bold",
+    fontWeight: 600,
+    fontSize: "1.05rem",
+  },
+  roomButton: {
+    marginTop: "16px",
+    textTransform: "none",
+    px: 3,
+    py: 1.25,
+    backgroundColor: "#0f5132",
+    color: "#fff",
+    fontWeight: "600",
+    '&:hover': {
+      backgroundColor: "#0b3f2b",
+    },
   },
 };
 

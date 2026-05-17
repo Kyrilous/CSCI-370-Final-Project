@@ -8,6 +8,8 @@ DAY_MAP = {
     "Wednesday": "W",
     "Thursday": "TH",
     "Friday": "F",
+    "Saturday": "S",
+    "Sunday": "SU"
 }
 
 
