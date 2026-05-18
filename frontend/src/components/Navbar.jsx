@@ -30,7 +30,9 @@ function Navbar() {
 
   return (
     <nav style={styles.navbar}>
-      <h2 style={styles.logo}>RoomRadar QC</h2>
+      <Link to={"/"}>
+        <h2 style={styles.logo}>RoomRadar QC</h2>
+      </Link>
 
       <div style={styles.links}>
         <Link style={styles.link} to={"/"}>
@@ -75,6 +77,7 @@ const styles = {
     background:
       "linear-gradient(to right, #1f1f1f, #8f2a3b96, #bdbcbc) padding-box, linear-gradient(to right, #000000, #E71939, #ffffff) border-box",
     border: "2px solid transparent",
+    cursor: "pointer",
   },
   links: {
     display: "flex",
