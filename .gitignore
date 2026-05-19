@@ -31,3 +31,7 @@ backend/*firebase-adminsdk*.json
 __pycache__/
 *.pyc
 .venv/
+
+#Environment variables
+.env
+backend/.env
