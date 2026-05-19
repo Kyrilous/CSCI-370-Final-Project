@@ -104,7 +104,7 @@ function RoomDetails() {
               <Typography color="error">{error}</Typography>
             ) : schedule.length === 0 ? (
               <Typography color="text.secondary">
-                No schedule data available for this room today.
+                No classes scheduled for this room today.
               </Typography>
             ) : (
               <List>
