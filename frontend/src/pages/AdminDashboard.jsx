@@ -70,9 +70,10 @@ function AdminDashboard() {
       formData.append("semesterName", semesterName);
       formData.append("csvFile", csvFile);
 
-      // TODO: Replace with actual backend endpoint once the backend is ready
       const token = localStorage.getItem("adminToken");
-      const response = await fetch("http://localhost:5000/api/admin/semester", {
+      const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
+      const response = await fetch(`${API_BASE_URL}/api/admin/semester`, {
         method: "POST",
         headers: { "Authorization": `Bearer ${token}` },
         body: formData,
