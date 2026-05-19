@@ -79,12 +79,12 @@ function RoomDetails() {
           variant="outlined"
           startIcon={<ArrowBackIcon />}
           onClick={() => navigate("/find-rooms")}
-          sx={{ mb: 3 }}
+          sx={{ mb: 3, width: { xs: "100%", sm: "auto" } }}
         >
           Back to Search
         </Button>
 
-        <Typography variant="h3" fontWeight="bold" gutterBottom>
+        <Typography variant="h3" fontWeight="bold" gutterBottom sx={styles.heading}>
           {room.room} • Schedule
         </Typography>
 
@@ -137,16 +137,23 @@ const styles = {
       "linear-gradient(135deg, #f8fafc 0%, #eef2ff 45%, #fff7ed 100%)",
     color: "#1e293b",
     py: 4,
+    px: { xs: 2, sm: 0 },
   },
   container: {
     width: "100%",
     maxWidth: 800,
     mx: "auto",
-    px: 3,
+    px: { xs: 1.5, sm: 3 },
+  },
+  heading: {
+    fontSize: { xs: "2rem", sm: "2.5rem" },
+    lineHeight: 1.1,
   },
   detailCard: {
     borderRadius: 4,
     boxShadow: 4,
+    width: "100%",
+    px: { xs: 0, sm: 0 },
   },
 };
 
