@@ -16,7 +16,18 @@ else:
 firebase_admin.initialize_app(cred)
 
 app = Flask(__name__)
-CORS(app)
+# CORS(app)
+CORS(
+    app,
+    resources={r"/api/*": {"origins": [
+        "http://localhost:5173",
+        "http://localhost:5174",
+        "https://csci-370-final-project.vercel.app"
+    ]}},
+    supports_credentials=True,
+    allow_headers=["Content-Type", "Authorization"],
+    methods=["GET", "POST", "OPTIONS"]
+)
 
 app.register_blueprint(rooms_bp)
 app.register_blueprint(admin_bp)

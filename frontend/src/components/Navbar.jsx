@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { Box } from "@mui/material";
 
 function Navbar() {
   const navigate = useNavigate();
@@ -29,12 +30,12 @@ function Navbar() {
   };
 
   return (
-    <nav style={styles.navbar}>
+    <Box component="nav" sx={styles.navbar}>
       <Link to={"/"}>
         <h2 style={styles.logo}>RoomRadar QC</h2>
       </Link>
 
-      <div style={styles.links}>
+      <Box sx={styles.links}>
         <Link style={styles.link} to={"/"}>
           Home
         </Link>
@@ -52,8 +53,8 @@ function Navbar() {
             Logout
           </button>
         )}
-      </div>
-    </nav>
+      </Box>
+    </Box>
   );
 }
 
@@ -64,9 +65,23 @@ const styles = {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
+    flexWrap: "wrap",
+    gap: "1rem",
     padding: "1rem 2rem",
     backgroundColor: "#c02b2b",
     color: "#fff",
+    "@media (max-width: 600px)": {
+      justifyContent: "center",
+      padding: "0.85rem 1rem",
+      textAlign: "center",
+    },
+  },
+  links: {
+    display: "flex",
+    gap: "1rem",
+    alignItems: "center",
+    flexWrap: "wrap",
+    justifyContent: "center",
   },
   logo: {
     margin: 0,
@@ -78,11 +93,6 @@ const styles = {
       "linear-gradient(to right, #1f1f1f, #8f2a3b96, #bdbcbc) padding-box, linear-gradient(to right, #000000, #E71939, #ffffff) border-box",
     border: "2px solid transparent",
     cursor: "pointer",
-  },
-  links: {
-    display: "flex",
-    gap: "1rem",
-    alignItems: "center",
   },
   link: {
     textDecoration: "none",

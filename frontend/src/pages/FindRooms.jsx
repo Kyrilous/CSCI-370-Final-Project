@@ -311,6 +311,9 @@ const styles = {
     padding: "48px",
     background:
       "linear-gradient(135deg, #f8fafc 0%, #eef2ff 50%, #fff7ed 100%)",
+    "@media (max-width: 900px)": {
+      padding: "24px 16px",
+    },
   },
   header: {
     maxWidth: "900px",
@@ -327,8 +330,10 @@ const styles = {
     marginBottom: "40px",
     padding: "24px",
     maxWidth: "1200px",
+    width: "100%",
     marginLeft: "auto",
     marginRight: "auto",
+    boxSizing: "border-box",
   },
   formGrid: {
     display: "grid",
@@ -351,6 +356,7 @@ const styles = {
     fontWeight: "bold",
     px: 4,
     py: 1.5,
+    width: { xs: "100%", sm: "auto" },
     "&:hover": {
       backgroundColor: "#b91c1c",
     },
@@ -359,6 +365,10 @@ const styles = {
     maxWidth: "1200px",
     margin: "24px auto 0 auto",
     textAlign: "center",
+    px: 0,
+    "@media (max-width: 900px)": {
+      px: 0,
+    },
   },
   roomsGrid: {
     display: "grid",
@@ -377,6 +387,9 @@ const styles = {
     textAlign: "center",
     padding: "28px",
     boxShadow: "0 10px 24px rgba(15, 23, 42, 0.08)",
+    "@media (max-width: 600px)": {
+      padding: "20px",
+    },
   },
   roomCardContent: {
     display: "flex",
@@ -401,6 +414,7 @@ const styles = {
     textTransform: "none",
     px: 3,
     py: 1.25,
+    width: { xs: "100%", sm: "auto" },
     backgroundColor: "#0f5132",
     color: "#fff",
     fontWeight: "600",
