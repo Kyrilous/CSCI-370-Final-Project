@@ -134,8 +134,10 @@ function FindRooms() {
       }
     }
 
-    fetch(`http://127.0.0.1:5000/api/rooms/search?${params}`)
-      .then((response) => {
+    const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
+    fetch(`${API_BASE_URL}/api/rooms/search?${params}`)
+    .then((response) => {
         if (!response.ok) {
           throw new Error(`Server responded with ${response.status}`);
         }
