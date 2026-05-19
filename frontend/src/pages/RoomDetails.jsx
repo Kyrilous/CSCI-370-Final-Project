@@ -29,8 +29,15 @@ function RoomDetails() {
 
   useEffect(() => {
     if (id && state.day) {
-      fetch(`http://127.0.0.1:5000/api/rooms/${id}/schedule?day=${state.day}`)
-        .then((response) => response.json())
+      const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
+      fetch(`${API_BASE_URL}/api/rooms/${id}/schedule?day=${state.day}`)
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(`Server responded with ${response.status}`);
+          }
+          return response.json();
+        })
         .then((data) => {
           setSchedule(data);
         })
@@ -52,18 +59,18 @@ function RoomDetails() {
   );
 
   const formatScheduleTime = (timeString) => {
-  if (!timeString) return "";
+    if (!timeString) return "";
 
-  const [hour, minute] = timeString.split(":");
+    const [hour, minute] = timeString.split(":");
 
-  let hourNum = parseInt(hour, 10);
-  const suffix = hourNum >= 12 ? "PM" : "AM";
+    let hourNum = parseInt(hour, 10);
+    const suffix = hourNum >= 12 ? "PM" : "AM";
 
-  if (hourNum === 0) hourNum = 12;
-  if (hourNum > 12) hourNum -= 12;
+    if (hourNum === 0) hourNum = 12;
+    if (hourNum > 12) hourNum -= 12;
 
-  return `${hourNum}:${minute} ${suffix}`;
-};
+    return `${hourNum}:${minute} ${suffix}`;
+  };
 
   return (
     <Box sx={styles.page}>
@@ -80,6 +87,7 @@ function RoomDetails() {
         <Typography variant="h3" fontWeight="bold" gutterBottom>
           {room.room} • Schedule
         </Typography>
+
         <Typography variant="body1" color="text.secondary" sx={{ mb: 4 }}>
           {room.building} — {dayLabel}
         </Typography>
@@ -104,7 +112,9 @@ function RoomDetails() {
                   <Box key={index}>
                     <ListItem disableGutters>
                       <ListItemText
-                        primary={`${formatScheduleTime(entry.start_time)} - ${formatScheduleTime(entry.end_time)}`}
+                        primary={`${formatScheduleTime(
+                          entry.start_time
+                        )} - ${formatScheduleTime(entry.end_time)}`}
                         secondary={`${entry.course_name} • ${entry.instructor}`}
                       />
                     </ListItem>

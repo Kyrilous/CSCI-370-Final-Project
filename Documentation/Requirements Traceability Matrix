@@ -1,0 +1,89 @@
+# Requirements Traceability Matrix
+
+Project: RoomRadar QC  
+Purpose: Trace user and admin requirements to the application screens, backend code, data objects, and verification approach.
+
+## Requirement Summary
+
+| ID | Requirement | Priority | Source / Rationale |
+| --- | --- | --- | --- |
+| FR-01 | Users can view a home page that explains the purpose of RoomRadar QC and links to room search. | High | Public landing and navigation need |
+| FR-02 | Users can search for available rooms by day, start time, end time, duration, and building. | High | Main student workflow |
+| FR-03 | The system validates that required search fields are provided. | High | Prevent incomplete searches |
+| FR-04 | The system validates that start time is before end time. | High | Prevent invalid availability ranges |
+| FR-05 | Users can view available room results with room code, building, and availability information. | High | Main student output |
+| FR-06 | Users can open a room detail page to view the room schedule for the selected day. | Medium | Helps students confirm conflicts |
+| FR-07 | Search state is preserved during the current browser session. | Medium | Improves usability when navigating back from details |
+| FR-08 | Admin users can log in with Firebase authentication. | High | Protects administrative features |
+| FR-09 | Admin-only pages are protected from unauthenticated users. | High | Access control |
+| FR-10 | Admin users can log out and return to the public experience. | Medium | Session control |
+| FR-11 | Admin users can choose semester season and year for uploaded data. | High | Data organization by term |
+| FR-12 | Admin users can upload a CSV file containing course and room information. | High | Schedule ingestion workflow |
+| FR-13 | The backend stores semesters, rooms, and schedules in MySQL. | High | Persistent data storage |
+| FR-14 | The backend can search for rooms that do not conflict with scheduled classes. | High | Core availability calculation |
+| FR-15 | The backend can return a room's schedule for a selected day. | Medium | Room details support |
+| FR-16 | The backend handles database connection errors with a clear API response. | Medium | Reliability and troubleshooting |
+| NFR-01 | The application provides a responsive web interface. | Medium | Student/admin accessibility across devices |
+| NFR-02 | The system uses CORS to allow the frontend to call backend APIs during development. | Medium | Frontend/backend integration |
+| NFR-03 | Backend configuration can be controlled through environment variables. | Medium | Deployment flexibility |
+
+## Traceability Matrix
+
+| Req ID | UI / User Flow | Frontend Implementation | Backend / Data Implementation | Verification Method | Current Status |
+| --- | --- | --- | --- | --- | --- |
+| FR-01 | Home page, navbar, "Find Rooms Now" action | `src/pages/Home.jsx`, `src/components/Navbar.jsx`, `src/App.jsx` route `/` | Not applicable | Manual UI check: open `/`, verify purpose text and links | Implemented |
+| FR-02 | Find Rooms form | `src/pages/FindRooms.jsx` | Intended endpoint: `GET /api/rooms/search` in `backend/routes/rooms.py` | Manual UI check: select filters and submit; API check with query params | Partially implemented: frontend currently uses mock room data |
+| FR-03 | Required field validation on search form | `src/pages/FindRooms.jsx` `handleSearch` | Not applicable | Submit empty form and confirm error message | Implemented |
+| FR-04 | Time range validation | `src/pages/FindRooms.jsx` `handleSearch` | Backend query assumes valid time range | Submit start time greater than or equal to end time | Implemented on frontend |
+| FR-05 | Available room cards and "View Schedule" action | `src/pages/FindRooms.jsx` | `rooms` table; search query in `backend/routes/rooms.py` | Manual UI check after search; API response contains room fields | Partially implemented: UI uses mock rooms, backend exists |
+| FR-06 | Room schedule details page | `src/pages/RoomDetails.jsx`, `src/App.jsx` route `/rooms/:id` | `GET /api/rooms/<room_id>/schedule` in `backend/routes/rooms.py`; `schedules` table | Open room details and verify schedule list; API check by room ID/day | Partially implemented: UI uses mock schedule data, backend exists |
+| FR-07 | Return to search without losing inputs/results | `src/pages/FindRooms.jsx` uses `sessionStorage` key `findRoomsState` | Not applicable | Search, open room details, go back, confirm fields/results remain | Implemented |
+| FR-08 | Admin login page | `src/pages/AdminLogin.jsx`, `src/firebase.js` | `backend/auth.py` can verify Firebase ID tokens for protected backend views | Login with valid/invalid Firebase credentials | Implemented on frontend; backend helper present |
+| FR-09 | Protected admin dashboard route | `src/components/ProtectedAdminRoute.jsx`, `src/App.jsx` route `/admin-dashboard` | `backend/auth.py` provides `require_admin`, though upload route does not currently apply it | Visit `/admin-dashboard` without token; try admin API without auth | Partially implemented: frontend protected, backend upload route not protected |
+| FR-10 | Navbar logout | `src/components/Navbar.jsx` | Not applicable | Log in, click logout, confirm token removal and navigation home | Implemented |
+| FR-11 | Semester season/year controls | `src/pages/AdminDashboard.jsx` | `semesters` table in `backend/models.py`; upload route receives `semesterName` | Submit without season/year and verify validation; submit valid term | Implemented |
+| FR-12 | CSV upload workflow | `src/pages/AdminDashboard.jsx` | `POST /api/admin/semester` in `backend/routes/admin.py` parses CSV rows | Upload non-CSV and verify error; upload valid CSV and verify API response | Implemented with backend endpoint |
+| FR-13 | Persistent schema creation | Not visible directly in UI | `backend/models.py` creates `semesters`, `rooms`, `schedules` | Start backend against MySQL and verify tables exist | Implemented |
+| FR-14 | Availability search excludes rooms with schedule conflicts | Search results page | SQL conflict query in `backend/routes/rooms.py` using `schedules` overlap logic | Seed schedules, call `/api/rooms/search?day=...&starttime=...&endtime=...` | Implemented in backend; not wired to frontend |
+| FR-15 | Room schedule API ordered by start time | Room details page | `backend/routes/rooms.py` route `/api/rooms/<int:room_id>/schedule` | Call endpoint with room ID and day, confirm ordered schedule | Implemented in backend; not wired to frontend |
+| FR-16 | Database failure returns clear error | Any backend API that touches MySQL | `backend/app.py` MySQL error handler | Run backend with unavailable DB and call API | Implemented |
+| NFR-01 | Responsive pages for home, search, admin dashboard | Inline styles and MUI responsive `sx` rules in page components | Not applicable | Resize browser/mobile viewport and check layout | Partially implemented |
+| NFR-02 | Frontend can call backend during development | Fetch calls in `src/pages/AdminDashboard.jsx` | `CORS(app)` in `backend/app.py` | Run frontend and backend locally; submit admin upload | Implemented |
+| NFR-03 | Deployment-specific backend config | Not visible directly in UI | `backend/config.py` uses `DB_*`, `FIREBASE_CREDENTIALS_PATH`, `ADMIN_EMAILS` env vars | Set env vars and start backend | Implemented |
+
+## Data Traceability
+
+| Data Object | Created / Updated By | Read By | Related Requirements |
+| --- | --- | --- | --- |
+| `semesters` | `POST /api/admin/semester` in `backend/routes/admin.py` | Associated with `schedules` rows | FR-11, FR-12, FR-13 |
+| `rooms` | CSV upload parser in `backend/routes/admin.py`; schema in `backend/models.py` | `GET /api/rooms/search` | FR-05, FR-12, FR-13, FR-14 |
+| `schedules` | CSV upload parser in `backend/routes/admin.py`; schema in `backend/models.py` | `GET /api/rooms/search`, `GET /api/rooms/<room_id>/schedule` | FR-06, FR-12, FR-13, FR-14, FR-15 |
+| Firebase admin token | `src/pages/AdminLogin.jsx` stores token in `localStorage` | `src/components/ProtectedAdminRoute.jsx`, `src/components/Navbar.jsx`; backend verification helper in `backend/auth.py` | FR-08, FR-09, FR-10 |
+| Search form state | `src/pages/FindRooms.jsx` stores state in `sessionStorage` | `src/pages/FindRooms.jsx` reloads saved state | FR-02, FR-07 |
+
+## Test Case Mapping
+
+| Test ID | Related Requirements | Test Description | Expected Result |
+| --- | --- | --- | --- |
+| TC-01 | FR-01 | Open `/` and use navbar/Home buttons. | Home page loads and navigation reaches Find Rooms/Admin Login. |
+| TC-02 | FR-03 | Submit Find Rooms form with missing required fields. | Error says day, start time, and end time are required. |
+| TC-03 | FR-04 | Submit Find Rooms form with start time after end time. | Error says start time must be before end time. |
+| TC-04 | FR-02, FR-05, FR-14 | Search rooms for a valid day/time/building. | Available rooms are returned and shown. |
+| TC-05 | FR-06, FR-15 | Open a room schedule from search results. | Schedule entries for the selected room/day are displayed. |
+| TC-06 | FR-07 | Search, open room details, return to Find Rooms. | Previous filters and results remain available. |
+| TC-07 | FR-08 | Log in with valid Firebase admin credentials. | Token/email are stored and user is routed to Admin Dashboard. |
+| TC-08 | FR-08 | Log in with invalid credentials. | Error message appears and dashboard is not opened. |
+| TC-09 | FR-09 | Open `/admin-dashboard` without an admin token. | User is redirected to `/admin-login`. |
+| TC-10 | FR-10 | Log out from the navbar. | Admin token/email are cleared and user returns home. |
+| TC-11 | FR-11, FR-12 | Submit admin upload without season, year, or CSV. | User sees the relevant validation error. |
+| TC-12 | FR-12, FR-13 | Upload a valid in-person schedule CSV. | Semester, rooms, and schedule rows are persisted. |
+| TC-13 | FR-16 | Call an API while MySQL is unavailable. | API returns HTTP 503 with database troubleshooting message. |
+
+## Known Gaps / Follow-Up Items
+
+| Gap ID | Description | Impact | Suggested Fix |
+| --- | --- | --- | --- |
+| GAP-01 | Find Rooms frontend uses hard-coded mock data instead of calling `/api/rooms/search`. | Search results may not match database availability. | Replace mock result assignment with a `fetch` call to the backend search endpoint. |
+| GAP-02 | Room Details frontend uses hard-coded schedule data instead of calling `/api/rooms/<id>/schedule`. | Room schedules may not match uploaded CSV data. | Fetch schedule data using the selected room ID and day. |
+| GAP-03 | Backend admin upload route does not use `require_admin`. | Direct API calls can upload data without verified admin authorization. | Apply `@require_admin` to `upload_semester` and send bearer token from the frontend. |
+| GAP-04 | CSV upload inserts duplicate rooms even though `room_code` is unique. | Uploads can fail or create incomplete schedule imports. | Use upsert/select existing room before schedule insert. |
