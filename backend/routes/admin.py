@@ -25,6 +25,10 @@ def upload_semester():
 
     db=get_db()
     cursor=db.cursor()
+    cursor.execute("SELECT id FROM semesters WHERE name = %s", (name,))
+    if cursor.fetchone():
+        return jsonify({"message": f"Semester '{name}' has already been uploaded"}), 409
+
     cursor.execute("INSERT INTO semesters (name) VALUES (%s)", (name,))
     db.commit()
     semester_id=cursor.lastrowid

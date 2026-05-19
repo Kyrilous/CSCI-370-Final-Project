@@ -5,8 +5,14 @@ from routes.admin import admin_bp
 from models import create_tables
 import firebase_admin
 from firebase_admin import credentials
+import os
+import json
 
-cred = credentials.Certificate("roomradar-qc-firebase-adminsdk-fbsvc-05922392f1.json")
+firebase_json = os.environ.get("FIREBASE_SERVICE_ACCOUNT_JSON")
+if firebase_json:
+    cred = credentials.Certificate(json.loads(firebase_json))
+else:
+    cred = credentials.Certificate("roomradar-qc-firebase-adminsdk-fbsvc-05922392f1.json")
 firebase_admin.initialize_app(cred)
 
 app = Flask(__name__)
