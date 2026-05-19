@@ -87,8 +87,14 @@ function AdminDashboard() {
         setCsvFile(null);
         setFileName("");
       } else {
-        const error = await response.json();
-        setMessage(error.message || "Failed to submit semester data");
+        let errorMessage = "Failed to submit semester data";
+        try {
+          const error = await response.json();
+          errorMessage = error.message || errorMessage;
+        } catch {
+          errorMessage = `Server error (${response.status}) — backend may have crashed`;
+        }
+        setMessage(errorMessage);
         setMessageType("error");
       }
     } catch (error) {
