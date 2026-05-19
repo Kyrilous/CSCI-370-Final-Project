@@ -79,21 +79,24 @@ function RoomDetails() {
           variant="outlined"
           startIcon={<ArrowBackIcon />}
           onClick={() => navigate("/find-rooms")}
-          sx={{ mb: 3, width: { xs: "100%", sm: "auto" } }}
+          sx={styles.backButton}
         >
           Back to Search
         </Button>
 
-        <Typography variant="h3" fontWeight="bold" gutterBottom sx={styles.heading}>
-          {room.room} • Schedule
-        </Typography>
-
-        <Typography variant="body1" color="text.secondary" sx={{ mb: 4 }}>
-          {room.building} — {dayLabel}
-        </Typography>
-
         <Card sx={styles.detailCard}>
-          <CardContent>
+          <CardContent sx={styles.detailCardContent}>
+            <Box sx={styles.cardHeader}>
+              <Typography variant="h4" fontWeight="bold" sx={styles.heading}>
+                {room.room} • Schedule
+              </Typography>
+              <Typography variant="body1" color="text.secondary">
+                {room.building} — {dayLabel}
+              </Typography>
+            </Box>
+
+            <Divider sx={{ my: 2, borderColor: "rgba(15, 23, 42, 0.12)" }} />
+
             <Typography variant="h6" fontWeight="700" gutterBottom>
               Today’s Schedule
             </Typography>
@@ -107,18 +110,24 @@ function RoomDetails() {
                 No classes scheduled for this room today.
               </Typography>
             ) : (
-              <List>
+              <List disablePadding>
                 {schedule.map((entry, index) => (
-                  <Box key={index}>
-                    <ListItem disableGutters>
+                  <Box key={index} sx={styles.listItemWrapper}>
+                    <ListItem disableGutters sx={styles.listItem}>
                       <ListItemText
-                        primary={`${formatScheduleTime(
-                          entry.start_time
-                        )} - ${formatScheduleTime(entry.end_time)}`}
-                        secondary={`${entry.course_name} • ${entry.instructor}`}
+                        primary={
+                          <Typography sx={styles.timeText}>
+                            {formatScheduleTime(entry.start_time)} - {formatScheduleTime(entry.end_time)}
+                          </Typography>
+                        }
+                        secondary={
+                          <Typography sx={styles.courseText}>
+                            {entry.course_name} • {entry.instructor}
+                          </Typography>
+                        }
                       />
                     </ListItem>
-                    {index < schedule.length - 1 && <Divider />}
+                    {index < schedule.length - 1 && <Divider sx={{ borderColor: "rgba(15, 23, 42, 0.08)" }} />}
                   </Box>
                 ))}
               </List>
@@ -136,24 +145,63 @@ const styles = {
     background:
       "linear-gradient(135deg, #f8fafc 0%, #eef2ff 45%, #fff7ed 100%)",
     color: "#1e293b",
-    py: 4,
-    px: { xs: 2, sm: 0 },
+    py: { xs: 3, sm: 4 },
+    px: { xs: 1.5, sm: 0 },
   },
   container: {
     width: "100%",
-    maxWidth: 800,
+    maxWidth: 760,
     mx: "auto",
     px: { xs: 1.5, sm: 3 },
   },
+  headerRow: {
+    display: "flex",
+    flexDirection: "column",
+    gap: 2,
+    mb: 3,
+    alignItems: "flex-start",
+    "@media (max-width: 600px)": {
+      alignItems: "stretch",
+    },
+  },
+  backButton: {
+    width: { xs: "100%", sm: "auto" },
+    justifyContent: "center",
+    mb: { xs: 1.5, sm: 0 },
+  },
+  cardHeader: {
+    display: "flex",
+    flexDirection: "column",
+    gap: 0.5,
+    mb: 2,
+  },
   heading: {
-    fontSize: { xs: "2rem", sm: "2.5rem" },
-    lineHeight: 1.1,
+    fontSize: { xs: "1.9rem", sm: "2.5rem" },
+    lineHeight: 1.05,
   },
   detailCard: {
     borderRadius: 4,
     boxShadow: 4,
-    width: "100%",
-    px: { xs: 0, sm: 0 },
+    backgroundColor: "rgba(255,255,255,0.94)",
+    overflow: "hidden",
+  },
+  detailCardContent: {
+    py: { xs: 2, sm: 3 },
+    px: { xs: 2, sm: 3 },
+  },
+  listItemWrapper: {
+    py: 1.5,
+  },
+  listItem: {
+    px: 0,
+  },
+  timeText: {
+    fontWeight: 700,
+    fontSize: { xs: "1rem", sm: "1.05rem" },
+  },
+  courseText: {
+    color: "#475569",
+    fontSize: { xs: "0.95rem", sm: "1rem" },
   },
 };
 
