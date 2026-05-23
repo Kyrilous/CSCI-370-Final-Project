@@ -1,0 +1,4378 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jira</title>
+    <meta http-equiv="Content-Type" Content="application/vnd.ms-word; charset=UTF-8">
+        <style type="text/css">
+
+.tableBorder, .grid
+{
+    background-color: #fff;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableBorder td, .grid td
+{
+    vertical-align: top;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+.noPadding
+{
+    padding: 0 !important;
+}
+
+h3 .subText
+{
+    font-size: 60%;
+    font-weight: normal;
+}
+
+.tabLabel
+{
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-bottom:none;
+    padding: 2px;
+    display: inline;
+}
+
+td.blank
+{
+    padding: 0;
+    margin: 0;
+}
+
+.blank td
+{
+    border: none;
+}
+
+#descriptionArea
+{
+    margin: 0;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+hr
+{
+    border-top:1px solid #aaa;
+}
+
+hr.fullcontent
+{
+  height: 15px;
+  padding: 10px 0;
+  background: #fff url('https://kyrilousnasr.atlassian.net/images/icons/hr.gif') no-repeat scroll center;
+}
+
+</style>
+
+</head>
+<body>
+
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [KAN-9]&nbsp;<a href="https://kyrilousnasr.atlassian.net/browse/KAN-9">Ticket 1: Set Up React Frontend Project</a>
+            <span class="subText">
+               Created: 30/Apr/26                   &nbsp;Updated: 09/May/26
+
+                                    &nbsp;Due: 30/Apr/26
+                                                    &nbsp;Resolved: 30/Apr/26
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Done</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://kyrilousnasr.atlassian.net/secure/BrowseProject.jspa?id=10001">CSCI 370 Project</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Task
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                id="word_reporter_712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                href="https://kyrilousnasr.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A1f030ce6-0126-4acb-b00b-8d0f2c8afa45">
+                    Kyrilous Nasr
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                id="word_assignee_712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                href="https://kyrilousnasr.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A1f030ce6-0126-4acb-b00b-8d0f2c8afa45">
+                    Kyrilous Nasr
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Done
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-10152-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Σ Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap>
+                            Not Specified
+                    </td>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap>
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Σ Time Spent:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap>
+                            Not Specified
+                    </td>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap>
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Σ Original Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap>
+                            Not Specified
+                    </td>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap>
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+            <tr><td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sub-tasks:</b></td>
+    <td bgcolor="#ffffff" valign="top">
+        <table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            <tr bgcolor="#f0f0f0">
+                <td>
+                    <b>Key</b><br/>
+                </td>
+                <td>
+                    <b>Summary</b><br/>
+                </td>
+                <td>
+                    <b>Type</b><br/>
+                </td>
+                <td>
+                    <b>Status</b><br/>
+                </td>
+                <td>
+                    <b>Assignee</b><br/>
+                </td>
+            </tr>
+                            <tr>
+                    <td>
+                        <a href="https://kyrilousnasr.atlassian.net/browse/KAN-10">KAN-10</a>
+                    </td>
+                    <td valign="top" width="25%">
+                        <a href="https://kyrilousnasr.atlassian.net/browse/KAN-10">- Create React project</a>
+                    </td>
+                    <td>
+                        Subtask
+                    </td>
+                    <td>
+                        Done
+                    </td>
+                    <td>
+                                                     Kyrilous Nasr  &nbsp;
+                                            </td>
+                </tr>
+                            <tr>
+                    <td>
+                        <a href="https://kyrilousnasr.atlassian.net/browse/KAN-11">KAN-11</a>
+                    </td>
+                    <td valign="top" width="25%">
+                        <a href="https://kyrilousnasr.atlassian.net/browse/KAN-11">- Install Material UI</a>
+                    </td>
+                    <td>
+                        Subtask
+                    </td>
+                    <td>
+                        Done
+                    </td>
+                    <td>
+                                                     Kyrilous Nasr  &nbsp;
+                                            </td>
+                </tr>
+                            <tr>
+                    <td>
+                        <a href="https://kyrilousnasr.atlassian.net/browse/KAN-12">KAN-12</a>
+                    </td>
+                    <td valign="top" width="25%">
+                        <a href="https://kyrilousnasr.atlassian.net/browse/KAN-12">- Install React Router</a>
+                    </td>
+                    <td>
+                        Subtask
+                    </td>
+                    <td>
+                        Done
+                    </td>
+                    <td>
+                                                     Kyrilous Nasr  &nbsp;
+                                            </td>
+                </tr>
+                            <tr>
+                    <td>
+                        <a href="https://kyrilousnasr.atlassian.net/browse/KAN-13">KAN-13</a>
+                    </td>
+                    <td valign="top" width="25%">
+                        <a href="https://kyrilousnasr.atlassian.net/browse/KAN-13">- Create folders for pages, component...</a>
+                    </td>
+                    <td>
+                        Subtask
+                    </td>
+                    <td>
+                        Done
+                    </td>
+                    <td>
+                                                     Kyrilous Nasr  &nbsp;
+                                            </td>
+                </tr>
+                            <tr>
+                    <td>
+                        <a href="https://kyrilousnasr.atlassian.net/browse/KAN-14">KAN-14</a>
+                    </td>
+                    <td valign="top" width="25%">
+                        <a href="https://kyrilousnasr.atlassian.net/browse/KAN-14">- Add basic App.jsx routing setup</a>
+                    </td>
+                    <td>
+                        Subtask
+                    </td>
+                    <td>
+                        Done
+                    </td>
+                    <td>
+                                                     Kyrilous Nasr  &nbsp;
+                                            </td>
+                </tr>
+                            <tr>
+                    <td>
+                        <a href="https://kyrilousnasr.atlassian.net/browse/KAN-15">KAN-15</a>
+                    </td>
+                    <td valign="top" width="25%">
+                        <a href="https://kyrilousnasr.atlassian.net/browse/KAN-15">- Add placeholder pages</a>
+                    </td>
+                    <td>
+                        Subtask
+                    </td>
+                    <td>
+                        Done
+                    </td>
+                    <td>
+                                                     Kyrilous Nasr  &nbsp;
+                                            </td>
+                </tr>
+                    </table>
+    </td>
+</tr>
+    
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10152-value" class="value" bgcolor="#ffffff" width="80%">      0|i0002j:
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Start date:</b></td>
+                <td id="customfield_10015-10152-value" class="value" bgcolor="#ffffff" width="80%">          <span title="29/Apr/26"><time datetime="2026-04-29">29/Apr/26</time></span>
+    </td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>Create the initial React project for RoomRadar QC and set up the basic frontend structure.</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <b><a id="parent_issue_summary" href="https://kyrilousnasr.atlassian.net/browse/KAN-1">Brainstorm Final Project Ideas</a></b>
+                <span style="font-size: 9px">(<a id="parent_issue_key" href="https://kyrilousnasr.atlassian.net/browse/KAN-1">KAN-1</a>)</span>
+                <h3 class="formtitle"><img src="https://kyrilousnasr.atlassian.net/images/icons/link_out_bot.gif" width="16" height="16" />
+                        [KAN-8]&nbsp;<a href="https://kyrilousnasr.atlassian.net/browse/KAN-8">Brainstorm Two Project Ideas - Kyrilous Nasr</a>
+            <span class="subText">
+               Created: 27/Apr/26                   &nbsp;Updated: 29/Apr/26
+
+                                                    &nbsp;Resolved: 29/Apr/26
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Done</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://kyrilousnasr.atlassian.net/secure/BrowseProject.jspa?id=10001">CSCI 370 Project</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+            <td width="20%"><b>Parent:</b></td>
+        <td width="80%"><a href="https://kyrilousnasr.atlassian.net/browse/KAN-1">Brainstorm Final Project Ideas</a></td>
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Subtask
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                id="word_reporter_712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                href="https://kyrilousnasr.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A1f030ce6-0126-4acb-b00b-8d0f2c8afa45">
+                    Kyrilous Nasr
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                id="word_assignee_712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                href="https://kyrilousnasr.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A1f030ce6-0126-4acb-b00b-8d0f2c8afa45">
+                    Kyrilous Nasr
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Done
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-10119-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+    
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10119-value" class="value" bgcolor="#ffffff" width="80%">      0|i0003z:
+  </td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>Come up with at least two possible final project ideas. For each idea, include the project name, a short explanation of what it does, the intended users, a few main features, and potential tools/technologies. Ensure each idea is clear enough for the group to understand and discuss.</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <b><a id="parent_issue_summary" href="https://kyrilousnasr.atlassian.net/browse/KAN-9">Ticket 1: Set Up React Frontend Project</a></b>
+                <span style="font-size: 9px">(<a id="parent_issue_key" href="https://kyrilousnasr.atlassian.net/browse/KAN-9">KAN-9</a>)</span>
+                <h3 class="formtitle"><img src="https://kyrilousnasr.atlassian.net/images/icons/link_out_bot.gif" width="16" height="16" />
+                        [KAN-10]&nbsp;<a href="https://kyrilousnasr.atlassian.net/browse/KAN-10">- Create React project</a>
+            <span class="subText">
+               Created: 30/Apr/26                   &nbsp;Updated: 30/Apr/26
+
+                                                    &nbsp;Resolved: 30/Apr/26
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Done</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://kyrilousnasr.atlassian.net/secure/BrowseProject.jspa?id=10001">CSCI 370 Project</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+            <td width="20%"><b>Parent:</b></td>
+        <td width="80%"><a href="https://kyrilousnasr.atlassian.net/browse/KAN-9">Ticket 1: Set Up React Frontend Project</a></td>
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Subtask
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                id="word_reporter_712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                href="https://kyrilousnasr.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A1f030ce6-0126-4acb-b00b-8d0f2c8afa45">
+                    Kyrilous Nasr
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                id="word_assignee_712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                href="https://kyrilousnasr.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A1f030ce6-0126-4acb-b00b-8d0f2c8afa45">
+                    Kyrilous Nasr
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Done
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-10154-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+    
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10154-value" class="value" bgcolor="#ffffff" width="80%">      0|i0004f:
+  </td>
+            </tr>
+            </table>
+
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <b><a id="parent_issue_summary" href="https://kyrilousnasr.atlassian.net/browse/KAN-9">Ticket 1: Set Up React Frontend Project</a></b>
+                <span style="font-size: 9px">(<a id="parent_issue_key" href="https://kyrilousnasr.atlassian.net/browse/KAN-9">KAN-9</a>)</span>
+                <h3 class="formtitle"><img src="https://kyrilousnasr.atlassian.net/images/icons/link_out_bot.gif" width="16" height="16" />
+                        [KAN-11]&nbsp;<a href="https://kyrilousnasr.atlassian.net/browse/KAN-11">- Install Material UI</a>
+            <span class="subText">
+               Created: 30/Apr/26                   &nbsp;Updated: 30/Apr/26
+
+                                                    &nbsp;Resolved: 30/Apr/26
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Done</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://kyrilousnasr.atlassian.net/secure/BrowseProject.jspa?id=10001">CSCI 370 Project</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+            <td width="20%"><b>Parent:</b></td>
+        <td width="80%"><a href="https://kyrilousnasr.atlassian.net/browse/KAN-9">Ticket 1: Set Up React Frontend Project</a></td>
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Subtask
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                id="word_reporter_712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                href="https://kyrilousnasr.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A1f030ce6-0126-4acb-b00b-8d0f2c8afa45">
+                    Kyrilous Nasr
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                id="word_assignee_712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                href="https://kyrilousnasr.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A1f030ce6-0126-4acb-b00b-8d0f2c8afa45">
+                    Kyrilous Nasr
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Done
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-10156-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+    
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10156-value" class="value" bgcolor="#ffffff" width="80%">      0|i0004n:
+  </td>
+            </tr>
+            </table>
+
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <b><a id="parent_issue_summary" href="https://kyrilousnasr.atlassian.net/browse/KAN-9">Ticket 1: Set Up React Frontend Project</a></b>
+                <span style="font-size: 9px">(<a id="parent_issue_key" href="https://kyrilousnasr.atlassian.net/browse/KAN-9">KAN-9</a>)</span>
+                <h3 class="formtitle"><img src="https://kyrilousnasr.atlassian.net/images/icons/link_out_bot.gif" width="16" height="16" />
+                        [KAN-12]&nbsp;<a href="https://kyrilousnasr.atlassian.net/browse/KAN-12">- Install React Router</a>
+            <span class="subText">
+               Created: 30/Apr/26                   &nbsp;Updated: 30/Apr/26
+
+                                                    &nbsp;Resolved: 30/Apr/26
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Done</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://kyrilousnasr.atlassian.net/secure/BrowseProject.jspa?id=10001">CSCI 370 Project</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+            <td width="20%"><b>Parent:</b></td>
+        <td width="80%"><a href="https://kyrilousnasr.atlassian.net/browse/KAN-9">Ticket 1: Set Up React Frontend Project</a></td>
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Subtask
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                id="word_reporter_712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                href="https://kyrilousnasr.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A1f030ce6-0126-4acb-b00b-8d0f2c8afa45">
+                    Kyrilous Nasr
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                id="word_assignee_712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                href="https://kyrilousnasr.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A1f030ce6-0126-4acb-b00b-8d0f2c8afa45">
+                    Kyrilous Nasr
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Done
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-10158-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+    
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10158-value" class="value" bgcolor="#ffffff" width="80%">      0|i0004v:
+  </td>
+            </tr>
+            </table>
+
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <b><a id="parent_issue_summary" href="https://kyrilousnasr.atlassian.net/browse/KAN-9">Ticket 1: Set Up React Frontend Project</a></b>
+                <span style="font-size: 9px">(<a id="parent_issue_key" href="https://kyrilousnasr.atlassian.net/browse/KAN-9">KAN-9</a>)</span>
+                <h3 class="formtitle"><img src="https://kyrilousnasr.atlassian.net/images/icons/link_out_bot.gif" width="16" height="16" />
+                        [KAN-13]&nbsp;<a href="https://kyrilousnasr.atlassian.net/browse/KAN-13">- Create folders for pages, components, and API files</a>
+            <span class="subText">
+               Created: 30/Apr/26                   &nbsp;Updated: 30/Apr/26
+
+                                                    &nbsp;Resolved: 30/Apr/26
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Done</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://kyrilousnasr.atlassian.net/secure/BrowseProject.jspa?id=10001">CSCI 370 Project</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+            <td width="20%"><b>Parent:</b></td>
+        <td width="80%"><a href="https://kyrilousnasr.atlassian.net/browse/KAN-9">Ticket 1: Set Up React Frontend Project</a></td>
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Subtask
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                id="word_reporter_712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                href="https://kyrilousnasr.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A1f030ce6-0126-4acb-b00b-8d0f2c8afa45">
+                    Kyrilous Nasr
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                id="word_assignee_712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                href="https://kyrilousnasr.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A1f030ce6-0126-4acb-b00b-8d0f2c8afa45">
+                    Kyrilous Nasr
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Done
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-10160-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+    
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10160-value" class="value" bgcolor="#ffffff" width="80%">      0|i00053:
+  </td>
+            </tr>
+            </table>
+
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <b><a id="parent_issue_summary" href="https://kyrilousnasr.atlassian.net/browse/KAN-9">Ticket 1: Set Up React Frontend Project</a></b>
+                <span style="font-size: 9px">(<a id="parent_issue_key" href="https://kyrilousnasr.atlassian.net/browse/KAN-9">KAN-9</a>)</span>
+                <h3 class="formtitle"><img src="https://kyrilousnasr.atlassian.net/images/icons/link_out_bot.gif" width="16" height="16" />
+                        [KAN-14]&nbsp;<a href="https://kyrilousnasr.atlassian.net/browse/KAN-14">- Add basic App.jsx routing setup</a>
+            <span class="subText">
+               Created: 30/Apr/26                   &nbsp;Updated: 30/Apr/26
+
+                                                    &nbsp;Resolved: 30/Apr/26
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Done</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://kyrilousnasr.atlassian.net/secure/BrowseProject.jspa?id=10001">CSCI 370 Project</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+            <td width="20%"><b>Parent:</b></td>
+        <td width="80%"><a href="https://kyrilousnasr.atlassian.net/browse/KAN-9">Ticket 1: Set Up React Frontend Project</a></td>
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Subtask
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                id="word_reporter_712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                href="https://kyrilousnasr.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A1f030ce6-0126-4acb-b00b-8d0f2c8afa45">
+                    Kyrilous Nasr
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                id="word_assignee_712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                href="https://kyrilousnasr.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A1f030ce6-0126-4acb-b00b-8d0f2c8afa45">
+                    Kyrilous Nasr
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Done
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-10162-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+    
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10162-value" class="value" bgcolor="#ffffff" width="80%">      0|i0005b:
+  </td>
+            </tr>
+            </table>
+
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <b><a id="parent_issue_summary" href="https://kyrilousnasr.atlassian.net/browse/KAN-9">Ticket 1: Set Up React Frontend Project</a></b>
+                <span style="font-size: 9px">(<a id="parent_issue_key" href="https://kyrilousnasr.atlassian.net/browse/KAN-9">KAN-9</a>)</span>
+                <h3 class="formtitle"><img src="https://kyrilousnasr.atlassian.net/images/icons/link_out_bot.gif" width="16" height="16" />
+                        [KAN-15]&nbsp;<a href="https://kyrilousnasr.atlassian.net/browse/KAN-15">- Add placeholder pages</a>
+            <span class="subText">
+               Created: 30/Apr/26                   &nbsp;Updated: 30/Apr/26
+
+                                                    &nbsp;Resolved: 30/Apr/26
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Done</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://kyrilousnasr.atlassian.net/secure/BrowseProject.jspa?id=10001">CSCI 370 Project</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+            <td width="20%"><b>Parent:</b></td>
+        <td width="80%"><a href="https://kyrilousnasr.atlassian.net/browse/KAN-9">Ticket 1: Set Up React Frontend Project</a></td>
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Subtask
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                id="word_reporter_712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                href="https://kyrilousnasr.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A1f030ce6-0126-4acb-b00b-8d0f2c8afa45">
+                    Kyrilous Nasr
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                id="word_assignee_712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                href="https://kyrilousnasr.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A1f030ce6-0126-4acb-b00b-8d0f2c8afa45">
+                    Kyrilous Nasr
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Done
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-10164-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+    
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10164-value" class="value" bgcolor="#ffffff" width="80%">      0|i0005j:
+  </td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>Build the main simple version of a frontend layout for RoomRadar QC, including a navigation bar that allows users to move between the main page.</p>
+
+<p>The navigation bar should include links to:</p>
+
+<ul>
+	<li>Home</li>
+	<li>Find Rooms</li>
+	<li>Login</li>
+	<li>Admin Upload</li>
+</ul>
+
+
+<p>Done when:</p>
+
+<ul>
+	<li>Navbar component is created</li>
+	<li>Navbar is visible on all pages</li>
+	<li>Navigation links work correctly</li>
+	<li>RoomRadar QC branding/title is shown</li>
+	<li>Layout looks clean and consistent</li>
+</ul>
+
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [KAN-17]&nbsp;<a href="https://kyrilousnasr.atlassian.net/browse/KAN-17">Create Main App Layout and Nav Bar</a>
+            <span class="subText">
+               Created: 30/Apr/26                   &nbsp;Updated: 03/May/26
+
+                                    &nbsp;Due: 01/May/26
+                                                    &nbsp;Resolved: 03/May/26
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Done</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://kyrilousnasr.atlassian.net/secure/BrowseProject.jspa?id=10001">CSCI 370 Project</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Task
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                id="word_reporter_712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                href="https://kyrilousnasr.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A1f030ce6-0126-4acb-b00b-8d0f2c8afa45">
+                    Kyrilous Nasr
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                id="word_assignee_712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                href="https://kyrilousnasr.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A1f030ce6-0126-4acb-b00b-8d0f2c8afa45">
+                    Kyrilous Nasr
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Done
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-10166-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Σ Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap>
+                            Not Specified
+                    </td>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap>
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Σ Time Spent:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap>
+                            Not Specified
+                    </td>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap>
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Σ Original Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap>
+                            Not Specified
+                    </td>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap>
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+            <tr><td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sub-tasks:</b></td>
+    <td bgcolor="#ffffff" valign="top">
+        <table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            <tr bgcolor="#f0f0f0">
+                <td>
+                    <b>Key</b><br/>
+                </td>
+                <td>
+                    <b>Summary</b><br/>
+                </td>
+                <td>
+                    <b>Type</b><br/>
+                </td>
+                <td>
+                    <b>Status</b><br/>
+                </td>
+                <td>
+                    <b>Assignee</b><br/>
+                </td>
+            </tr>
+                            <tr>
+                    <td>
+                        <a href="https://kyrilousnasr.atlassian.net/browse/KAN-18">KAN-18</a>
+                    </td>
+                    <td valign="top" width="25%">
+                        <a href="https://kyrilousnasr.atlassian.net/browse/KAN-18">Implement Navbar Component</a>
+                    </td>
+                    <td>
+                        Subtask
+                    </td>
+                    <td>
+                        Done
+                    </td>
+                    <td>
+                                                     Kyrilous Nasr  &nbsp;
+                                            </td>
+                </tr>
+                            <tr>
+                    <td>
+                        <a href="https://kyrilousnasr.atlassian.net/browse/KAN-19">KAN-19</a>
+                    </td>
+                    <td valign="top" width="25%">
+                        <a href="https://kyrilousnasr.atlassian.net/browse/KAN-19">Integrate Navbar into Main Layout</a>
+                    </td>
+                    <td>
+                        Subtask
+                    </td>
+                    <td>
+                        Done
+                    </td>
+                    <td>
+                                                     Kyrilous Nasr  &nbsp;
+                                            </td>
+                </tr>
+                            <tr>
+                    <td>
+                        <a href="https://kyrilousnasr.atlassian.net/browse/KAN-20">KAN-20</a>
+                    </td>
+                    <td valign="top" width="25%">
+                        <a href="https://kyrilousnasr.atlassian.net/browse/KAN-20">Configure Navigation Links Functionality</a>
+                    </td>
+                    <td>
+                        Subtask
+                    </td>
+                    <td>
+                        Done
+                    </td>
+                    <td>
+                                                     Kyrilous Nasr  &nbsp;
+                                            </td>
+                </tr>
+                            <tr>
+                    <td>
+                        <a href="https://kyrilousnasr.atlassian.net/browse/KAN-21">KAN-21</a>
+                    </td>
+                    <td valign="top" width="25%">
+                        <a href="https://kyrilousnasr.atlassian.net/browse/KAN-21">Style Navbar and Layout for Consistency</a>
+                    </td>
+                    <td>
+                        Subtask
+                    </td>
+                    <td>
+                        Done
+                    </td>
+                    <td>
+                                                     Kyrilous Nasr  &nbsp;
+                                            </td>
+                </tr>
+                            <tr>
+                    <td>
+                        <a href="https://kyrilousnasr.atlassian.net/browse/KAN-22">KAN-22</a>
+                    </td>
+                    <td valign="top" width="25%">
+                        <a href="https://kyrilousnasr.atlassian.net/browse/KAN-22">Test Navbar Visibility and Navigation</a>
+                    </td>
+                    <td>
+                        Subtask
+                    </td>
+                    <td>
+                        Done
+                    </td>
+                    <td>
+                                                     Kyrilous Nasr  &nbsp;
+                                            </td>
+                </tr>
+                            <tr>
+                    <td>
+                        <a href="https://kyrilousnasr.atlassian.net/browse/KAN-23">KAN-23</a>
+                    </td>
+                    <td valign="top" width="25%">
+                        <a href="https://kyrilousnasr.atlassian.net/browse/KAN-23">Create Navbar.jsx</a>
+                    </td>
+                    <td>
+                        Subtask
+                    </td>
+                    <td>
+                        Done
+                    </td>
+                    <td>
+                                                     &nbsp;
+                                            </td>
+                </tr>
+                    </table>
+    </td>
+</tr>
+    
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10166-value" class="value" bgcolor="#ffffff" width="80%">      0|i0005r:
+  </td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>Build the main simple version of a frontend layout for RoomRadar QC, including a navigation bar that allows users to move between the main page.</p>
+
+<p>The navigation bar should include links to:</p>
+
+<ul>
+	<li>Home</li>
+	<li>Find Rooms</li>
+	<li>Login</li>
+	<li>Admin Upload</li>
+</ul>
+
+
+<p>Done when:</p>
+
+<ul>
+	<li>Navbar component is created</li>
+	<li>Navbar is visible on all pages</li>
+	<li>Navigation links work correctly</li>
+	<li>RoomRadar QC branding/title is shown</li>
+	<li>Layout looks clean and consistent</li>
+</ul>
+
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Comments</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="grid" style="margin: 0;">
+                <tr id="comment-header-10069"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="712020:10757065-3ef5-4327-949d-84ace9a6dc0e"
+                id="word_commented_712020:10757065-3ef5-4327-949d-84ace9a6dc0e"
+                href="https://kyrilousnasr.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A10757065-3ef5-4327-949d-84ace9a6dc0e">
+                    Joseph Uwagba
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">03/May/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-10069"><td bgcolor="#ffffff">
+            <p>This is a solid start for the frontend layout. The navbar clearly includes all the required links (Home, Find Rooms, Login, Admin Upload), which makes navigation straightforward for users. The RoomRadar QC branding is also visible, which helps with identity and consistency across pages.</p>
+
+<p>Make sure the navbar is properly reused across all pages (not duplicated manually) so updates are easier later. Also confirm that each link routes correctly ( <tt>/</tt>, <tt>/find-rooms</tt>, <tt>/login</tt>, <tt>/admin-upload</tt>) and doesn’t cause full page reloads if using React Router.</p>
+
+<p>From a design perspective, the layout looks clean, but consider adding a hover effect or active state on the navbar links so users know which page they’re on. Also, I will test responsiveness to ensure the navbar works well on smaller screens.</p>
+        </td></tr>
+            </table>
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [KAN-24]&nbsp;<a href="https://kyrilousnasr.atlassian.net/browse/KAN-24">Build Home Page</a>
+            <span class="subText">
+               Created: 30/Apr/26                   &nbsp;Updated: 03/May/26
+
+                                    &nbsp;Due: 01/May/26
+                                                    &nbsp;Resolved: 03/May/26
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Done</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://kyrilousnasr.atlassian.net/secure/BrowseProject.jspa?id=10001">CSCI 370 Project</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Task
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                id="word_reporter_712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                href="https://kyrilousnasr.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A1f030ce6-0126-4acb-b00b-8d0f2c8afa45">
+                    Kyrilous Nasr
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                id="word_assignee_712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                href="https://kyrilousnasr.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A1f030ce6-0126-4acb-b00b-8d0f2c8afa45">
+                    Kyrilous Nasr
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Done
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-10179-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+    
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10179-value" class="value" bgcolor="#ffffff" width="80%">      0|i0005t:
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Start date:</b></td>
+                <td id="customfield_10015-10179-value" class="value" bgcolor="#ffffff" width="80%">          <span title="29/Apr/26"><time datetime="2026-04-29">29/Apr/26</time></span>
+    </td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>Create the RoomRadar QC home page with a clean landing page design that explains what the app does and guides users to start searching for available rooms.</p>
+
+<p>Tasks:</p>
+
+<ul>
+	<li>Add main heading and app description</li>
+	<li>Add “Find Rooms Now” button that links to the Find Rooms page</li>
+	<li>Add “How It Works” section</li>
+	<li>Add note that availability is based on schedule data, not live occupancy</li>
+	<li>Style the page</li>
+</ul>
+
+
+
+
+<p>Done When:</p>
+
+<ul>
+	<li>Home page displays correctly</li>
+	<li>Button routes to /find-rooms</li>
+	<li>Page explains the purpose of RoomRadar QC</li>
+	<li>Page is styled and responsive</li>
+</ul>
+
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Comments</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="grid" style="margin: 0;">
+                <tr id="comment-header-10068"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="712020:10757065-3ef5-4327-949d-84ace9a6dc0e"
+                id="word_commented_712020:10757065-3ef5-4327-949d-84ace9a6dc0e"
+                href="https://kyrilousnasr.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A10757065-3ef5-4327-949d-84ace9a6dc0e">
+                    Joseph Uwagba
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">03/May/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-10068"><td bgcolor="#ffffff">
+            <p>Looks good overall. The home page clearly explains what RoomRadar QC does and gives users a simple starting point with the “Find Rooms Now” button. I like that the page includes a “How It Works” section because it helps users understand the process before searching.</p>
+
+<p>Make sure the “Find Rooms Now” button routes correctly to <tt>/find-rooms</tt>. Also, the note about availability being based on schedule data and not live room occupancy is important, so it should be easy to see. The page should also be tested on mobile and desktop to confirm the design is responsive.</p>
+
+<p>Overall, this meets the main goal of introducing the app and guiding users to start finding available rooms.</p>
+        </td></tr>
+            </table>
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <b><a id="parent_issue_summary" href="https://kyrilousnasr.atlassian.net/browse/KAN-17">Create Main App Layout and Nav Bar</a></b>
+                <span style="font-size: 9px">(<a id="parent_issue_key" href="https://kyrilousnasr.atlassian.net/browse/KAN-17">KAN-17</a>)</span>
+                <h3 class="formtitle"><img src="https://kyrilousnasr.atlassian.net/images/icons/link_out_bot.gif" width="16" height="16" />
+                        [KAN-18]&nbsp;<a href="https://kyrilousnasr.atlassian.net/browse/KAN-18">Implement Navbar Component</a>
+            <span class="subText">
+               Created: 30/Apr/26                   &nbsp;Updated: 30/Apr/26
+
+                                                    &nbsp;Resolved: 30/Apr/26
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Done</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://kyrilousnasr.atlassian.net/secure/BrowseProject.jspa?id=10001">CSCI 370 Project</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+            <td width="20%"><b>Parent:</b></td>
+        <td width="80%"><a href="https://kyrilousnasr.atlassian.net/browse/KAN-17">Create Main App Layout and Nav Bar</a></td>
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Subtask
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                id="word_reporter_712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                href="https://kyrilousnasr.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A1f030ce6-0126-4acb-b00b-8d0f2c8afa45">
+                    Kyrilous Nasr
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                id="word_assignee_712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                href="https://kyrilousnasr.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A1f030ce6-0126-4acb-b00b-8d0f2c8afa45">
+                    Kyrilous Nasr
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Done
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-10168-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+    
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10168-value" class="value" bgcolor="#ffffff" width="80%">      0|i0005z:
+  </td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>Develop the Navbar component with links to Home, Find Rooms, Login, and Admin Upload. Ensure RoomRadar QC branding/title is included.</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <b><a id="parent_issue_summary" href="https://kyrilousnasr.atlassian.net/browse/KAN-17">Create Main App Layout and Nav Bar</a></b>
+                <span style="font-size: 9px">(<a id="parent_issue_key" href="https://kyrilousnasr.atlassian.net/browse/KAN-17">KAN-17</a>)</span>
+                <h3 class="formtitle"><img src="https://kyrilousnasr.atlassian.net/images/icons/link_out_bot.gif" width="16" height="16" />
+                        [KAN-19]&nbsp;<a href="https://kyrilousnasr.atlassian.net/browse/KAN-19">Integrate Navbar into Main Layout</a>
+            <span class="subText">
+               Created: 30/Apr/26                   &nbsp;Updated: 30/Apr/26
+
+                                                    &nbsp;Resolved: 30/Apr/26
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Done</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://kyrilousnasr.atlassian.net/secure/BrowseProject.jspa?id=10001">CSCI 370 Project</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+            <td width="20%"><b>Parent:</b></td>
+        <td width="80%"><a href="https://kyrilousnasr.atlassian.net/browse/KAN-17">Create Main App Layout and Nav Bar</a></td>
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Subtask
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                id="word_reporter_712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                href="https://kyrilousnasr.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A1f030ce6-0126-4acb-b00b-8d0f2c8afa45">
+                    Kyrilous Nasr
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                id="word_assignee_712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                href="https://kyrilousnasr.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A1f030ce6-0126-4acb-b00b-8d0f2c8afa45">
+                    Kyrilous Nasr
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Done
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-10170-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+    
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10170-value" class="value" bgcolor="#ffffff" width="80%">      0|i00067:
+  </td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>Add the Navbar component to the main app layout so that it appears on all pages. Ensure the layout remains consistent across different routes.</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <b><a id="parent_issue_summary" href="https://kyrilousnasr.atlassian.net/browse/KAN-17">Create Main App Layout and Nav Bar</a></b>
+                <span style="font-size: 9px">(<a id="parent_issue_key" href="https://kyrilousnasr.atlassian.net/browse/KAN-17">KAN-17</a>)</span>
+                <h3 class="formtitle"><img src="https://kyrilousnasr.atlassian.net/images/icons/link_out_bot.gif" width="16" height="16" />
+                        [KAN-20]&nbsp;<a href="https://kyrilousnasr.atlassian.net/browse/KAN-20">Configure Navigation Links Functionality</a>
+            <span class="subText">
+               Created: 30/Apr/26                   &nbsp;Updated: 30/Apr/26
+
+                                                    &nbsp;Resolved: 30/Apr/26
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Done</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://kyrilousnasr.atlassian.net/secure/BrowseProject.jspa?id=10001">CSCI 370 Project</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+            <td width="20%"><b>Parent:</b></td>
+        <td width="80%"><a href="https://kyrilousnasr.atlassian.net/browse/KAN-17">Create Main App Layout and Nav Bar</a></td>
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Subtask
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                id="word_reporter_712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                href="https://kyrilousnasr.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A1f030ce6-0126-4acb-b00b-8d0f2c8afa45">
+                    Kyrilous Nasr
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                id="word_assignee_712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                href="https://kyrilousnasr.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A1f030ce6-0126-4acb-b00b-8d0f2c8afa45">
+                    Kyrilous Nasr
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Done
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-10172-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+    
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10172-value" class="value" bgcolor="#ffffff" width="80%">      0|i0006f:
+  </td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>Set up navigation so that each link in the Navbar correctly routes to its respective page using React Router or equivalent routing solution.</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <b><a id="parent_issue_summary" href="https://kyrilousnasr.atlassian.net/browse/KAN-17">Create Main App Layout and Nav Bar</a></b>
+                <span style="font-size: 9px">(<a id="parent_issue_key" href="https://kyrilousnasr.atlassian.net/browse/KAN-17">KAN-17</a>)</span>
+                <h3 class="formtitle"><img src="https://kyrilousnasr.atlassian.net/images/icons/link_out_bot.gif" width="16" height="16" />
+                        [KAN-21]&nbsp;<a href="https://kyrilousnasr.atlassian.net/browse/KAN-21">Style Navbar and Layout for Consistency</a>
+            <span class="subText">
+               Created: 30/Apr/26                   &nbsp;Updated: 30/Apr/26
+
+                                                    &nbsp;Resolved: 30/Apr/26
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Done</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://kyrilousnasr.atlassian.net/secure/BrowseProject.jspa?id=10001">CSCI 370 Project</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+            <td width="20%"><b>Parent:</b></td>
+        <td width="80%"><a href="https://kyrilousnasr.atlassian.net/browse/KAN-17">Create Main App Layout and Nav Bar</a></td>
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Subtask
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                id="word_reporter_712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                href="https://kyrilousnasr.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A1f030ce6-0126-4acb-b00b-8d0f2c8afa45">
+                    Kyrilous Nasr
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                id="word_assignee_712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                href="https://kyrilousnasr.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A1f030ce6-0126-4acb-b00b-8d0f2c8afa45">
+                    Kyrilous Nasr
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Done
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-10174-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+    
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10174-value" class="value" bgcolor="#ffffff" width="80%">      0|i0006n:
+  </td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>Apply CSS or styling framework to ensure the Navbar and main layout look clean, visually appealing, and consistent with RoomRadar QC branding.</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <b><a id="parent_issue_summary" href="https://kyrilousnasr.atlassian.net/browse/KAN-17">Create Main App Layout and Nav Bar</a></b>
+                <span style="font-size: 9px">(<a id="parent_issue_key" href="https://kyrilousnasr.atlassian.net/browse/KAN-17">KAN-17</a>)</span>
+                <h3 class="formtitle"><img src="https://kyrilousnasr.atlassian.net/images/icons/link_out_bot.gif" width="16" height="16" />
+                        [KAN-22]&nbsp;<a href="https://kyrilousnasr.atlassian.net/browse/KAN-22">Test Navbar Visibility and Navigation</a>
+            <span class="subText">
+               Created: 30/Apr/26                   &nbsp;Updated: 30/Apr/26
+
+                                                    &nbsp;Resolved: 30/Apr/26
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Done</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://kyrilousnasr.atlassian.net/secure/BrowseProject.jspa?id=10001">CSCI 370 Project</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+            <td width="20%"><b>Parent:</b></td>
+        <td width="80%"><a href="https://kyrilousnasr.atlassian.net/browse/KAN-17">Create Main App Layout and Nav Bar</a></td>
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Subtask
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                id="word_reporter_712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                href="https://kyrilousnasr.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A1f030ce6-0126-4acb-b00b-8d0f2c8afa45">
+                    Kyrilous Nasr
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                id="word_assignee_712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                href="https://kyrilousnasr.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A1f030ce6-0126-4acb-b00b-8d0f2c8afa45">
+                    Kyrilous Nasr
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Done
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-10176-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+    
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10176-value" class="value" bgcolor="#ffffff" width="80%">      0|i0006v:
+  </td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>Verify that the Navbar is visible on all pages and that all navigation links work as intended. Check for responsiveness and usability.</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [KAN-37]&nbsp;<a href="https://kyrilousnasr.atlassian.net/browse/KAN-37">Fix FindRooms search logic to use real filters and backend results</a>
+            <span class="subText">
+               Created: 12/May/26                   &nbsp;Updated: 23/May/26
+
+                                                    &nbsp;Resolved: 23/May/26
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Done</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://kyrilousnasr.atlassian.net/secure/BrowseProject.jspa?id=10001">CSCI 370 Project</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Task
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:10757065-3ef5-4327-949d-84ace9a6dc0e"
+                id="word_reporter_712020:10757065-3ef5-4327-949d-84ace9a6dc0e"
+                href="https://kyrilousnasr.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A10757065-3ef5-4327-949d-84ace9a6dc0e">
+                    Joseph Uwagba
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                id="word_assignee_712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                href="https://kyrilousnasr.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A1f030ce6-0126-4acb-b00b-8d0f2c8afa45">
+                    Kyrilous Nasr
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Done
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-10384-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+    
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10384-value" class="value" bgcolor="#ffffff" width="80%">      0|i0006v:09
+  </td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>The <tt>/find-rooms</tt> page is reachable and includes the required Material UI controls, validation, and result cards. However, the search currently uses hardcoded mock data and does not apply the selected building or duration. This means users see the same room results regardless of search criteria.</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [KAN-34]&nbsp;<a href="https://kyrilousnasr.atlassian.net/browse/KAN-34">Connect Room Search Page to Backend API</a>
+            <span class="subText">
+               Created: 11/May/26                   &nbsp;Updated: 23/May/26
+
+                                                    &nbsp;Resolved: 23/May/26
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Done</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://kyrilousnasr.atlassian.net/secure/BrowseProject.jspa?id=10001">CSCI 370 Project</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Task
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:6d3c7a48-976b-4251-b957-1df8421a2a33"
+                id="word_reporter_712020:6d3c7a48-976b-4251-b957-1df8421a2a33"
+                href="https://kyrilousnasr.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A6d3c7a48-976b-4251-b957-1df8421a2a33">
+                    Darshan Patel
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                id="word_assignee_712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                href="https://kyrilousnasr.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A1f030ce6-0126-4acb-b00b-8d0f2c8afa45">
+                    Kyrilous Nasr
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Done
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-10381-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+    
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10381-value" class="value" bgcolor="#ffffff" width="80%">      0|i0006v:9
+  </td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <h3><a name="Summary"></a>Summary</h3>
+
+<p>The room search page needs to be connected to the backend API. This will allow it to display real available rooms instead of using hardcoded data.</p>
+
+<h3><a name="Context"></a>Context</h3>
+
+<p>Currently, the room search page shows hardcoded room data. This needs to be updated to reflect actual available rooms from the database.</p>
+
+<h3><a name="Acceptancecriteria"></a>Acceptance criteria</h3>
+
+<ul>
+	<li><tt>FindRooms.jsx</tt> fetches from <tt>GET <a href="http://localhost:5000/api/rooms/search" class="external-link" rel="nofollow noreferrer">http://localhost:5000/api/rooms/search</a></tt></li>
+	<li>Passes <tt>day</tt>, <tt>starttime</tt>, <tt>endtime</tt>, <tt>building</tt> as query params</li>
+	<li>Displays real rooms returned from the backend</li>
+	<li>Remove <tt>mockRooms</tt> hardcoded array</li>
+</ul>
+
+
+<h3><a name=""></a></h3>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [KAN-35]&nbsp;<a href="https://kyrilousnasr.atlassian.net/browse/KAN-35">Connect Room Details Page to Backend API</a>
+            <span class="subText">
+               Created: 11/May/26                   &nbsp;Updated: 23/May/26
+
+                                                    &nbsp;Resolved: 23/May/26
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Done</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://kyrilousnasr.atlassian.net/secure/BrowseProject.jspa?id=10001">CSCI 370 Project</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Task
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:6d3c7a48-976b-4251-b957-1df8421a2a33"
+                id="word_reporter_712020:6d3c7a48-976b-4251-b957-1df8421a2a33"
+                href="https://kyrilousnasr.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A6d3c7a48-976b-4251-b957-1df8421a2a33">
+                    Darshan Patel
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                id="word_assignee_712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                href="https://kyrilousnasr.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A1f030ce6-0126-4acb-b00b-8d0f2c8afa45">
+                    Kyrilous Nasr
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Done
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-10382-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+    
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10382-value" class="value" bgcolor="#ffffff" width="80%">      0|i0006x:
+  </td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <h3><a name="Summary"></a>Summary</h3>
+
+<p>Connect the Room Details Page to the backend API to display the real schedule for a room.</p>
+
+<h3><a name="Context"></a>Context</h3>
+
+<p>This feature allows students to view the actual schedule for a room when they click "View Schedule".</p>
+
+<h3><a name="Acceptancecriteria"></a>Acceptance criteria</h3>
+
+<ul>
+	<li><tt>RoomDetails.jsx</tt> fetches from <tt>GET <a href="http://localhost:5000/api/rooms/" class="external-link" rel="nofollow noreferrer">http://localhost:5000/api/rooms/</a>&lt;id&gt;/schedule</tt></li>
+	<li>Passes <tt>day</tt> as a query param</li>
+	<li>Displays real course name, instructor, start time, and end time</li>
+	<li>Remove hardcoded schedule data</li>
+</ul>
+
+
+<h3><a name=""></a></h3>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [KAN-49]&nbsp;<a href="https://kyrilousnasr.atlassian.net/browse/KAN-49">Frontend Problem</a>
+            <span class="subText">
+               Created: 17/May/26                   &nbsp;Updated: 18/May/26
+
+                                                    &nbsp;Resolved: 18/May/26
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Done</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://kyrilousnasr.atlassian.net/secure/BrowseProject.jspa?id=10001">CSCI 370 Project</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Task
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:10757065-3ef5-4327-949d-84ace9a6dc0e"
+                id="word_reporter_712020:10757065-3ef5-4327-949d-84ace9a6dc0e"
+                href="https://kyrilousnasr.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A10757065-3ef5-4327-949d-84ace9a6dc0e">
+                    Joseph Uwagba
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                id="word_assignee_712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                href="https://kyrilousnasr.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A1f030ce6-0126-4acb-b00b-8d0f2c8afa45">
+                    Kyrilous Nasr
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Done
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-10460-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+    
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10460-value" class="value" bgcolor="#ffffff" width="80%">      0|i0006z:
+  </td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>Frontend only allows filtering for 4 buildings, however building filter should allow to filter by all available buildings in CSV file.</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Comments</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="grid" style="margin: 0;">
+                <tr id="comment-header-10244"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                id="word_commented_712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                href="https://kyrilousnasr.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A1f030ce6-0126-4acb-b00b-8d0f2c8afa45">
+                    Kyrilous Nasr
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">17/May/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-10244"><td bgcolor="#ffffff">
+            <p> <a href="https://kyrilousnasr.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A10757065-3ef5-4327-949d-84ace9a6dc0e" class="user-hover" rel="712020:10757065-3ef5-4327-949d-84ace9a6dc0e" data-account-id="712020:10757065-3ef5-4327-949d-84ace9a6dc0e" accountid="712020:10757065-3ef5-4327-949d-84ace9a6dc0e" rel="noreferrer">Joseph Uwagba</a> Added Saturday and Sunday as menu items in our FindRooms.jsx page. Added “Saturday”:“S” and “Sunday”: “SU”</p>
+        </td></tr>
+            </table>
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [KAN-42]&nbsp;<a href="https://kyrilousnasr.atlassian.net/browse/KAN-42">Review RoomDetails page implementation</a>
+            <span class="subText">
+               Created: 12/May/26                   &nbsp;Updated: 17/May/26
+
+                                                    &nbsp;Resolved: 17/May/26
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Done</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://kyrilousnasr.atlassian.net/secure/BrowseProject.jspa?id=10001">CSCI 370 Project</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Task
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:10757065-3ef5-4327-949d-84ace9a6dc0e"
+                id="word_reporter_712020:10757065-3ef5-4327-949d-84ace9a6dc0e"
+                href="https://kyrilousnasr.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A10757065-3ef5-4327-949d-84ace9a6dc0e">
+                    Joseph Uwagba
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                id="word_assignee_712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                href="https://kyrilousnasr.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A1f030ce6-0126-4acb-b00b-8d0f2c8afa45">
+                    Kyrilous Nasr
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Done
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-10389-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+    
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10389-value" class="value" bgcolor="#ffffff" width="80%">      0|i0007a:m
+  </td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>RoomDetails page is mostly implemented. It is reachable at <tt>/rooms/:id</tt>, shows room name/building, displays schedule info, has a back button, and matches the app style. However, it still uses mock data and has some text encoding issues.</p>
+
+<p><b>Issues:</b></p>
+
+<ul>
+	<li>Uses hardcoded room/schedule data instead of backend data.</li>
+	<li>Unknown room IDs show the first room instead of an error.</li>
+	<li>Text has broken characters like <tt>â€¢</tt>, <tt>â€”</tt>, and <tt>Todayâ€™s</tt>.</li>
+	<li>Does not show availability details from the selected room yet.</li>
+</ul>
+
+
+<p><b>Suggested Fixes:</b></p>
+
+<ul>
+	<li>Connect RoomDetails to backend data.</li>
+	<li>Add not-found/error state.</li>
+	<li>Fix broken text characters.</li>
+	<li>Show availability details from search results.</li>
+</ul>
+
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [KAN-41]&nbsp;<a href="https://kyrilousnasr.atlassian.net/browse/KAN-41">Review AdminDashboard CSV upload page implementation</a>
+            <span class="subText">
+               Created: 12/May/26                   &nbsp;Updated: 17/May/26
+
+                                                    &nbsp;Resolved: 17/May/26
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Done</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://kyrilousnasr.atlassian.net/secure/BrowseProject.jspa?id=10001">CSCI 370 Project</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Task
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:10757065-3ef5-4327-949d-84ace9a6dc0e"
+                id="word_reporter_712020:10757065-3ef5-4327-949d-84ace9a6dc0e"
+                href="https://kyrilousnasr.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A10757065-3ef5-4327-949d-84ace9a6dc0e">
+                    Joseph Uwagba
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                id="word_assignee_712020:1f030ce6-0126-4acb-b00b-8d0f2c8afa45"
+                href="https://kyrilousnasr.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A1f030ce6-0126-4acb-b00b-8d0f2c8afa45">
+                    Kyrilous Nasr
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Done
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-10388-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+    
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10388-value" class="value" bgcolor="#ffffff" width="80%">      0|i0007p:i
+  </td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>QA / Feature Review - Needs Minor Fixes</p>
+
+
+<p>The AdminDashboard page is implemented and mostly satisfies the requested feature. It is reachable at <tt>/admin-dashboard</tt>, uses a centered Material UI card, provides semester dropdowns, accepts CSV uploads, shows loading/success/error messages, and sends <tt>FormData</tt> to the backend semester upload endpoint.</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />Generated at Sat May 23 19:14:38 UTC 2026 by Kyrilous Nasr using Jira 1001.0.0-SNAPSHOT#100291-rev:5829cedafba6a8fa42a0906c5ee4ff46e2db21de.
+
+</body>
+</html>
